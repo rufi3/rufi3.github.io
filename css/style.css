@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */4
+
+html {
+	background: transparent;
+	width: 100%;
+	height: 100%;
+	font-size: 5e;
+	margin: 0;
+	padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+  overflow-x: hidden;
+}
+
+.hero {
+  position: relative;
+	width: 100%;
+	height: 60%;
+}
+
+.slike {
+  position: absolute;
+	right: 10%;
+  height: 100%;
+}
+
+.naslov {
+  position: absolute;
+	display: table;
+	width: 100%;
+  top: 50%;
+	font-family: 'Secular One', sans-serif;
+	transform: translateY(-50%);
+	color: black;
+}
+
+.naslov-tr {
+	display: table-row;
+	background-color: #32b6c7;
+}
+
+.naslov-1 {
+	display: table-cell;
+	font-size: 510%;
+}
+
+.naslov-1-anim {
+  animation: movetitle 1.5s ease both;
+}
+
+.naslov-2 {
+	display: table-cell;
+	height: 10px;
+	background-color: white;
+	padding-left: 10%;
+}
+
+.naslov-3 {
+	display: table-cell;
+	font-size: 655%;
+}
+
+.naslov-3-anim {
+  animation: movetitle 1.5s ease both;
+  animation-delay: 0.3s;
+}
+
+@keyframes movetitle {
+  from {padding-left: 2%;}
+  to {padding-left: 10%;}
+}
