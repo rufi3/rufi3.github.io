@@ -157,6 +157,10 @@ section {
 	min-height: 100%;
 }
 
+section:nth-child(4) {
+	margin-bottom: 100px;
+}
+
 .selector {
   position: absolute;
 	top: -50px;
@@ -364,7 +368,8 @@ section {
 .kontakt {
   position: relative;
 	width: 100%;
-	height: calc(100vh - 100px);
+	min-height: calc(100vh - 100px);
+	padding-bottom: 50px;
 	background-color: #32b6c7;
 }
 
@@ -761,7 +766,7 @@ section:nth-child(4) {
 
 .obs1 {
 	position: absolute;
-  top: 200px;
+  top: 220px;
   padding-bottom: 0%;
 	z-index: 1;
 }
@@ -934,11 +939,11 @@ section:nth-child(4) {
 }
 
 .opis-r {
-	padding: 70px 60px 20px 60px;
+	padding: 90px 60px 20px 60px;
 }
 
 .opis-l {
-	padding: 70px 60px 20px 60px;
+	padding: 90px 60px 20px 60px;
 }
 
 .lista-l {
