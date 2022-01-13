@@ -75,6 +75,7 @@ body {
 }
 
 .navbar a {
+	-webkit-tap-highlight-color: transparent;
   color: black;
 	width: 150px;
 	text-align: center;
@@ -85,9 +86,10 @@ body {
 }
 
 .navbar a.icon {
+	-webkit-tap-highlight-color: transparent;
   display: none;
 	padding: 10.5px 20px;
-	font-size: 180%;
+  font-size: 180%;
 }
 
 @keyframes movenavbar {
@@ -95,17 +97,17 @@ body {
   to {font-size: 200%}
 }
 
-.navbar a:hover {
+.navbar a:hover, .navbar a:focus, .navbar a:active {
   color: #32b6c7;
 	animation: movenavbar 500ms ease both;
 }
 
-.navbar a.icon:hover {
+.navbar a.icon:hover, .navbar a.icon:focus, .navbar a.icon:active {
   color: #32b6c7;
 	animation: none;
 }
 
-a.navbar_language:hover {
+a.navbar_language:hover, a.navbar_language:focus, a.navbar_language:active {
   color: #32b6c7;
 }
 
@@ -118,7 +120,25 @@ a.navbar_language:hover {
 	display: none;
 }
 
+.navbar_logo:focus .logo{
+	display: none;
+}
+
+.navbar_logo:active .logo{
+	display: none;
+}
+
 .navbar_logo:hover .logoplavi{
+	display: inline-block;
+	animation: movelogo 500ms ease both;
+}
+
+.navbar_logo:focus .logoplavi{
+	display: inline-block;
+	animation: movelogo 500ms ease both;
+}
+
+.navbar_logo:active .logoplavi{
 	display: inline-block;
 	animation: movelogo 500ms ease both;
 }
@@ -366,6 +386,7 @@ section {
 }
 
 .button-t {
+	-webkit-tap-highlight-color: transparent;
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
@@ -381,12 +402,13 @@ section {
 	margin-bottom: 20%;
 }
 
-.button-t:hover {
+.button-t:hover, .button-t:focus, .button-t:active {
 	color: #32b6c7;
 	border: 3px solid #32b6c7;
 }
 
 .button {
+	-webkit-tap-highlight-color: transparent;
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
@@ -401,7 +423,7 @@ section {
 	font-size: 150%;
 }
 
-.button:hover {
+.button:hover, .button:focus, .button:active  {
 	color: #32b6c7;
 	border: 3px solid #32b6c7;
 }
@@ -441,6 +463,15 @@ section {
 }
 
 @media only screen and (max-width: 1200px) {
+
+html::-webkit-scrollbar {
+	display: none;
+}
+
+ html {
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+}
 
 .navbar a {
 	display: none;
@@ -482,7 +513,7 @@ section {
   font-size: 160%;
 }
 
-.navbar.responsive a:hover {
+.navbar.responsive a:hover, .navbar.responsive a:focus, .navbar.responsive a:active {
 	color: #32b6c7;
 }
 
@@ -503,7 +534,6 @@ section {
   top: 30px;
   display: block;
 	padding: 10.5px 7px 10.5px 20px;
-	font-size: 180%;
 }
 
 .navbar.responsive .fa-bars {
@@ -514,7 +544,7 @@ section {
   display: block;
 }
 
-.navbar.responsive a.icon:hover {
+.navbar.responsive a.icon:hover, .navbar.responsive a.icon:focus, .navbar.responsive a.icon:active {
 	color: #32b6c7;
 }
 
@@ -644,8 +674,8 @@ html::-webkit-scrollbar {
  html {
 	-ms-overflow-style: none;  /* IE and Edge */
 	scrollbar-width: none;  /* Firefox */
-}	
-	
+}
+
 section:nth-child(1) {
 	width: 100%;
 	min-height: auto;
@@ -762,6 +792,10 @@ section:nth-child(4) {
 	background-color: rgba(50, 182, 199, 0.8);
 }
 
+.naslov-7 {
+	font-size: 380%;
+}
+
 .podnaslov_text {
 	font-size: 145%;
 	margin-top: 5px;
@@ -778,7 +812,46 @@ section:nth-child(4) {
 
 }
 
+@media only screen and (max-width: 800px) {
+
+section:nth-child(3) {
+	width: 100%;
+	min-height: auto;
+	margin-top: 0;
+	margin-bottom: 100px;
+}
+
+}
+
 @media only screen and (max-width: 700px) {
+
+.logo {
+	width: 100px;
+  padding: 33px 80px 0px 0px;
+}
+
+.logoplavi {
+	width: 100px;
+  padding: 33px 80px 0px 0px;
+}
+
+@keyframes movelogo {
+  from {width: 100px}
+  to {width: 120px}
+}
+
+.navbar a.icon {
+	font-size: 140%;
+  top: 36px;
+}
+
+.navbar_jezici {
+	margin-top: 35px;
+}
+
+.navbar_language {
+  font-size: 140%;
+}
 
 section:nth-child(1) {
 	width: 100%;
@@ -859,14 +932,47 @@ section:nth-child(4) {
   top: 30px;
 }
 
+.naslov-1 {
+	font-size: 270%;
+}
+
+.naslov-3 {
+	font-size: 340%;
+}
+
+.naslov-4 {
+	font-size: 340%;
+}
+
+.naslov-5 {
+	font-size: 340%;
+}
+
+.naslov-6 {
+	font-size: 340%;
+}
+
+.naslov-7 {
+	font-size: 380%;
+}
+
 .naslov-7 .naslov-tr {
 	display: block;
 }
 
 .naslov-7 {
 	display: block;
+	font-size: 380%;
 	min-width: 100px;
 	width: 100%;
+}
+
+.podnaslov_text {
+	font-size: 130%;
+}
+
+.button-t {
+	width: 82%;
 }
 
 .lista-r {
