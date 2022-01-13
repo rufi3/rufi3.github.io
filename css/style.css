@@ -961,27 +961,27 @@ section:nth-child(4) {
 }
 
 .naslov-1 {
-	font-size: 270%;
+	font-size: 240%;
 }
 
 .naslov-3 {
-	font-size: 340%;
+	font-size: 305%;
 }
 
 .naslov-4 {
-	font-size: 340%;
+	font-size: 305%;
 }
 
 .naslov-5 {
-	font-size: 340%;
+	font-size: 305%;
 }
 
 .naslov-6 {
-	font-size: 340%;
+	font-size: 305%;
 }
 
 .naslov-7 {
-	font-size: 380%;
+	font-size: 305%;
 }
 
 .naslov-7 .naslov-tr {
@@ -990,17 +990,17 @@ section:nth-child(4) {
 
 .naslov-7 {
 	display: block;
-	font-size: 380%;
+	font-size: 305%;
 	min-width: 100px;
 	width: 100%;
 }
 
 .podnaslov_text {
-	font-size: 130%;
+	font-size: 118%;
 }
 
 .button-t {
-	width: 82%;
+	width: 90%;
 }
 
 .lista-r {
