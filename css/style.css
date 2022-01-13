@@ -33,6 +33,7 @@ body {
 }
 
 .header .navbar_logo {
+	-webkit-tap-highlight-color: transparent;
 	width: 180px;
 	margin-right: 10px;
 	margin-left: 10%;
@@ -100,17 +101,17 @@ body {
   to {font-size: 200%}
 }
 
-.navbar a:hover, .navbar a:focus, .navbar a:active {
+.navbar a:hover, .navbar a:focus {
   color: #32b6c7;
 	animation: movenavbar 500ms ease both;
 }
 
-.navbar a.icon:hover, .navbar a.icon:focus, .navbar a.icon:active {
+.navbar a.icon:hover, .navbar a.icon:focus {
   color: #32b6c7;
 	animation: none;
 }
 
-a.navbar_language:hover, a.navbar_language:focus, a.navbar_language:active {
+a.navbar_language:hover, a.navbar_language:focus {
   color: #32b6c7;
 }
 
@@ -127,21 +128,12 @@ a.navbar_language:hover, a.navbar_language:focus, a.navbar_language:active {
 	display: none;
 }
 
-.navbar_logo:active .logo{
-	display: none;
-}
-
 .navbar_logo:hover .logoplavi{
 	display: inline-block;
 	animation: movelogo 500ms ease both;
 }
 
 .navbar_logo:focus .logoplavi{
-	display: inline-block;
-	animation: movelogo 500ms ease both;
-}
-
-.navbar_logo:active .logoplavi{
 	display: inline-block;
 	animation: movelogo 500ms ease both;
 }
@@ -410,7 +402,7 @@ section:nth-child(4) {
 	margin-bottom: 20%;
 }
 
-.button-t:hover, .button-t:focus, .button-t:active {
+.button-t:hover, .button-t:focus {
 	color: #32b6c7;
 	border: 3px solid #32b6c7;
 }
@@ -431,7 +423,7 @@ section:nth-child(4) {
 	font-size: 150%;
 }
 
-.button:hover, .button:focus, .button:active  {
+.button:hover, .button:focus  {
 	color: #32b6c7;
 	border: 3px solid #32b6c7;
 }
@@ -521,7 +513,7 @@ html::-webkit-scrollbar {
   font-size: 160%;
 }
 
-.navbar.responsive a:hover, .navbar.responsive a:focus, .navbar.responsive a:active {
+.navbar.responsive a:hover, .navbar.responsive a:focus {
 	color: #32b6c7;
 }
 
@@ -552,7 +544,7 @@ html::-webkit-scrollbar {
   display: block;
 }
 
-.navbar.responsive a.icon:hover, .navbar.responsive a.icon:focus, .navbar.responsive a.icon:active {
+.navbar.responsive a.icon:hover, .navbar.responsive a.icon:focus {
 	color: #32b6c7;
 }
 
@@ -843,7 +835,7 @@ section:nth-child(3) {
   padding: 32px 80px 0px 0px;
 }
 
-.navbar a:hover, .navbar a:focus, .navbar a:active {
+.navbar a:hover, .navbar a:focus {
 	animation: none;
 }
 
@@ -852,10 +844,6 @@ section:nth-child(3) {
 }
 
 .navbar_logo:focus .logoplavi{
-	animation: none;
-}
-
-.navbar_logo:active .logoplavi{
 	animation: none;
 }
 
