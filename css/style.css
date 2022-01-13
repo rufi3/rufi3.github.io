@@ -21,7 +21,7 @@ body {
 }
 
 .header {
-  position: fixed;
+  position: fixed !important;
 	display: flex;
   overflow: hidden;
 	background-color: white;
