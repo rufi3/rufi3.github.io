@@ -7,45 +7,148 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Secular+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="script/script1.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-  <div class="navbar" id="topnav">
-    <a href="index.html"><img src="images/logo.png" alt="FRANKOFON"></a>
-    <a href="#o_nama">O NAMA</a>
-    <a href="#poduka">PODUKA</a>
-    <a href="#prijevod">PRIJEVOD</a>
-    <a href="#kontakt">KONTAKT</a>
-    <a href="javascript:void(0);" class="icon" onclick="topNavToggle()">
-      <i class="fa fa-bars"></i>
+  <div class="header" id="tophead">
+    <a class="navbar_logo" href="index.html">
+      <img class="logo" src="images/logo.png" alt="FRANKOFON">
+      <img class="logoplavi" src="images/logo_plavi.png" alt="FRANKOFON">
     </a>
+    <div class="navbar" id="topnav">
+      <a href="#o_nama" onclick="topNavToggle()">o nama</a>
+      <a href="#poduka" onclick="topNavToggle()">poduka</a>
+      <a href="#prijevod" onclick="topNavToggle()">prijevod</a>
+      <a href="#kontakt" onclick="topNavToggle()">kontakt</a>
+      <a class="icon" href="javascript:void(0);" onclick="topNavToggle()">
+        <i class="fa fa-bars"></i>
+        <i class="fa fa-times"></i>
+      </a>
+    </div>
+    <div class="navbar_jezici">
+      <a class="navbar_language" href="index.html">hr</a>
+      <p class="navbar_language">/</p>
+      <a class="navbar_language" href="index_en.html">en</a>
+    </div>
   </div>
 
   <div class="main">
+      <section>
+        <img class="slike_n" src="images/francuski.png">
+        <div class="naslov obs1">
+          <div class="naslov-tr">
+            <h1 class="naslov-1">PARLEZ-VOUS</h1>
+          </div>
+          <div class="naslov-tr">
+            <h1 class="naslov-2"></h1>
+          </div>
+          <div class="naslov-tr">
+            <h1 class="naslov-3">FRANÇAIS?</h1>
+          </div>
+          <div class="naslov-tr">
+            <h2 class="podnaslov_text">poduka iz francuskog jezika</h2>
+          </div>
+          <div class="naslov-tr">
+            <div class="button-container-t">
+              <a class="button-t" href="#kontakt">kontaktirajte nas</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <div class="hero">
-      <div class="naslov">
-        <div class="naslov-tr">
-          <h1 class="naslov-1 anim">PARLEZ-VOUS</h1>
+      <section>
+        <div class="selector"  id="o_nama">
         </div>
-        <div class="naslov-tr">
-          <h1 class="naslov-2"></h1>
+        <img class="slike_l" src="images/onama.png">
+        <div class="naslov obs2">
+          <div class="naslov-tr">
+            <h1 class="naslov-4">O NAMA</h1>
+          </div>
+          <div class="naslov-tr">
+            <p class="opis-r">Frankofon nudi nastavu francuskog jezika. Satove drži Rodolphe Sudon, izvorni govornik i diplomirani profesor s više od 10 godina iskustva. Njegova metoda osigurava aktivno učenje francuskog jezika u stvarnoj komunikacijskoj situaciji. Nastava je prilagođena individualnim potrebama: profesionalcima koji francuski uče u poslovne svrhe, učenicima koji pohađaju francuski u školi ili pak ljubiteljima francuskog jezika.</p>
+          </div>
+          <div class="naslov-tr">
+            <div class="button-container-r">
+              <a class="button" href="#kontakt">kontaktirajte nas</a>
+            </div>
+          </div>
         </div>
-        <div class="naslov-tr">
-          <h1 class="naslov-3 anim">FRANÇAIS?</h1>
+      </section>
+
+      <section>
+        <div class="selector"  id="poduka">
         </div>
-      </div>
-      <img class="slike" src="images/hero.png">
+        <img class="slike_d" src="images/poduka.png">
+        <div class="naslov obs3">
+          <div class="naslov-tr">
+            <h1 class="naslov-5">PODUKA</h1>
+          </div>
+          <div class="naslov-tr">
+            <p class="opis-l">Želite naučiti francuski jezik? Neovisno jesu li Vaši razlozi privatni ili poslovni, dobit ćete u potpunosti prilagođen program Vašim specifičnim potrebama. Nudimo:</p>
+          </div>
+          <div class="naslov-tr">
+            <ul class="lista-l">
+              <li>online nastavu ili dolazak u Vaš prostor</li>
+              <li>fleksibilne termine usklađene s Vašim mogućnostima</li>
+              <li>individualnu nastavu ili nastavu u manjim grupama</li>
+              <li>nastavu za početnike i napredne polaznike</li>
+              <li>pripreme za DELF (diploma o poznavanju francuskog jezika koju strancima izdaje Ministarstvo obrazovanja Republike Francuske)</li>
+              <li>praćenje školskog programa</li>
+              <li>konverzacijske satove za napredne</li>
+            </ul>
+          </div>
+          <div class="naslov-tr">
+            <div class="button-container-l">
+              <a class="button" href="#kontakt">zatražite ponudu</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="selector" id="prijevod">
+        </div>
+        <img class="slike_l" src="images/prijevod.png">
+        <div class="naslov obs4">
+          <div class="naslov-tr">
+            <h1 class="naslov-6">PRIJEVOD</h1>
+          </div>
+          <div class="naslov-tr">
+            <p class="opis-r">Trebate prijevod teksta s hrvatskog na francuski jezik? Nudimo stručne i kvalitetne prijevode u duhu francuskog jezika od strane izvornog govornika. Pismeni prijevodi obračunavaju se po kartici teksta (1500 znakova s razmacima).</p>
+          </div>
+          <div class="naslov-tr">
+            <div class="button-container-r">
+              <a class="button" href="#kontakt">zatražite ponudu</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="kontakt">
+        <div class="selector"  id="kontakt">
+        </div>
+        <div class="naslov-kontakt obs5">
+          <div class="naslov-tr">
+            <h1 class="naslov-7">KONTAKT</h1>
+            <ul class="lista-r">
+              <li><img class="kontakt-logo" src="images/logo_bijeli.png" alt="FRANKOFON"></li>
+              <li>obrt za usluge</li>
+              <li>vl. Rodolphe Sudon</li>
+              <li>Zagreb, Vodovodna 9</li>
+              <li>M: +385 95 881 9080</li>
+              <li>E: rodolphe.sudon@gmail.com</li>
+            </ul>
+          </div>
+        </div>
     </div>
-
-  <div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
 
-  </div>
+</body>
 
-<script type="text/javascript" src="script/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="script/script.js"></script>
+  <script type="text/javascript" src="script/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="script/script.js"></script>
