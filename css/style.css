@@ -52,6 +52,7 @@ body {
 }
 
 .navbar_language {
+	-webkit-tap-highlight-color: transparent;
   display: table-cell;
   color: black;
 	width: 30px;
@@ -63,12 +64,14 @@ body {
 }
 
 .logo {
+	-webkit-tap-highlight-color: transparent;
   display: block;
 	width: 150px;
   padding: 15px 30px 0px 0px;
 }
 
 .logoplavi {
+	-webkit-tap-highlight-color: transparent;
 	display: none;
 	width: 150px;
   padding: 15px 30px 0px 0px;
@@ -827,22 +830,46 @@ section:nth-child(3) {
 
 .logo {
 	width: 100px;
-  padding: 33px 80px 0px 0px;
+  padding: 32px 80px 0px 0px;
 }
 
 .logoplavi {
 	width: 100px;
-  padding: 33px 80px 0px 0px;
+  padding: 32px 80px 0px 0px;
 }
 
-@keyframes movelogo {
-  from {width: 100px}
-  to {width: 120px}
+.navbar a:hover, .navbar a:focus, .navbar a:active {
+	animation: none;
+}
+
+.navbar_logo:hover .logoplavi{
+	animation: none;
+}
+
+.navbar_logo:focus .logoplavi{
+	animation: none;
+}
+
+.navbar_logo:active .logoplavi{
+	animation: none;
+}
+
+.navbar.responsive a {
+  font-size: 140%;
 }
 
 .navbar a.icon {
 	font-size: 140%;
+  right: 75px;
   top: 36px;
+}
+
+.navbar.responsive a.icon {
+  display: block;
+  right: 22px;
+  top: 36px;
+  display: block;
+	padding: 10.5px 7px 10.5px 20px;
 }
 
 .navbar_jezici {
@@ -850,6 +877,7 @@ section:nth-child(3) {
 }
 
 .navbar_language {
+	width: 20px;
   font-size: 140%;
 }
 
