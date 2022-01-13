@@ -637,6 +637,15 @@ section {
 
 @media only screen and (max-width: 1000px) {
 
+html::-webkit-scrollbar {
+	display: none;
+}
+
+ html {
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+}	
+	
 section:nth-child(1) {
 	width: 100%;
 	min-height: auto;
