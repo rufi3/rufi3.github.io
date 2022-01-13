@@ -156,7 +156,14 @@ section:nth-child(4) {
 
 .selector {
   position: absolute;
+	display: block;
 	top: -50px;
+}
+
+#kontakt {
+  position: absolute;
+	display: block;
+	top: -100px;
 }
 
 .slike_n {
@@ -347,6 +354,9 @@ section:nth-child(4) {
 	line-height: 150%;
 	color: white;
 	font-size: 150%;
+	padding-right: 60px;
+	padding-bottom: 40px;
+	margin-bottom: 0;
 	background-color: #32b6c7;
 }
 
@@ -362,7 +372,7 @@ section:nth-child(4) {
   position: relative;
 	width: 100%;
 	min-height: calc(100vh - 100px);
-	padding-bottom: 50px;
+	height: auto;
 	background-color: #32b6c7;
 }
 
@@ -1000,6 +1010,7 @@ section:nth-child(4) {
 .lista-r {
 	display: block;
 	padding-left: 60px;
+	width: 100vw;
 }
 
 .naslov-7 .naslov-tr {
