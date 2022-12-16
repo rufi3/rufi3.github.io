@@ -1,154 +1,74 @@
+<!doctype html>
+
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Frankofon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search the scene</title>
   <link rel="shortcut icon" type="image/png" href="favicon.png"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/706520c77c.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Secular+One&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
-  <script type="text/javascript" src="script/script1.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="javascript/script_kitchen.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style_kitchen.css">
 </head>
 
 <body>
-  <div class="header" id="tophead">
-    <a class="navbar_logo" href="index.html">
-      <img class="logo" src="images/logo.png" alt="FRANKOFON">
-      <img class="logoplavi" src="images/logo_plavi.png" alt="FRANKOFON">
-    </a>
-    <div class="navbar" id="topnav">
-      <a href="#o_nama" onclick="topNavToggle()">o nama</a>
-      <a href="#poduka" onclick="topNavToggle()">poduka</a>
-      <a href="#prijevod" onclick="topNavToggle()">prijevod</a>
-      <a href="#kontakt" onclick="topNavToggle()">kontakt</a>
-      <a class="icon" href="javascript:void(0);" onclick="topNavToggle()">
-        <i class="fa fa-bars"></i>
-        <i class="fa fa-times"></i>
-      </a>
-    </div>
-    <div class="navbar_jezici">
-      <a class="navbar_language" href="index.html">hr</a>
-      <p class="navbar_language">/</p>
-      <a class="navbar_language" href="index_en.html">en</a>
-    </div>
-  </div>
-
   <div class="main">
-      <section>
-        <img class="slike_n" src="images/francuski.png">
-        <div class="naslov obs1">
-          <div class="naslov-tr">
-            <h1 class="naslov-1">PARLEZ-VOUS</h1>
-          </div>
-          <div class="naslov-tr">
-            <h1 class="naslov-2"></h1>
-          </div>
-          <div class="naslov-tr">
-            <h1 class="naslov-3">FRANÇAIS?</h1>
-          </div>
-          <div class="naslov-tr">
-            <h2 class="podnaslov_text">poduka iz francuskog jezika</h2>
-          </div>
-          <div class="naslov-tr">
-            <div class="button-container-t">
-              <a class="button-t" href="#kontakt">kontaktirajte nas</a>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section>
-        <div class="selector"  id="o_nama">
-        </div>
-        <img class="slike_l" src="images/onama.png">
-        <div class="naslov obs2">
-          <div class="naslov-tr">
-            <h1 class="naslov-4">O NAMA</h1>
-          </div>
-          <div class="naslov-tr">
-            <p class="opis-r">Frankofon nudi nastavu francuskog jezika. Satove drži Rodolphe Sudon, izvorni govornik i diplomirani profesor s više od 10 godina iskustva. Njegova metoda osigurava aktivno učenje francuskog jezika u stvarnoj komunikacijskoj situaciji. Nastava je prilagođena individualnim potrebama: profesionalcima koji francuski uče u poslovne svrhe, učenicima koji pohađaju francuski u školi ili pak ljubiteljima francuskog jezika.</p>
-          </div>
-          <div class="naslov-tr">
-            <div class="button-container-r">
-              <a class="button" href="#kontakt">kontaktirajte nas</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="selector"  id="poduka">
-        </div>
-        <img class="slike_d" src="images/poduka.png">
-        <div class="naslov obs3">
-          <div class="naslov-tr">
-            <h1 class="naslov-5">PODUKA</h1>
-          </div>
-          <div class="naslov-tr">
-            <p class="opis-l">Želite naučiti francuski jezik? Neovisno jesu li Vaši razlozi privatni ili poslovni, dobit ćete u potpunosti prilagođen program Vašim specifičnim potrebama. Nudimo:</p>
-          </div>
-          <div class="naslov-tr">
-            <ul class="lista-l">
-              <li>online nastavu ili dolazak u Vaš prostor</li>
-              <li>fleksibilne termine usklađene s Vašim mogućnostima</li>
-              <li>individualnu nastavu ili nastavu u manjim grupama</li>
-              <li>nastavu za početnike i napredne polaznike</li>
-              <li>pripreme za DELF (diploma o poznavanju francuskog jezika koju strancima izdaje Ministarstvo obrazovanja Republike Francuske)</li>
-              <li>praćenje školskog programa</li>
-              <li>konverzacijske satove za napredne</li>
-            </ul>
-          </div>
-          <div class="naslov-tr">
-            <div class="button-container-l">
-              <a class="button" href="#kontakt">zatražite ponudu</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="selector" id="prijevod">
-        </div>
-        <img class="slike_l" src="images/prijevod.png">
-        <div class="naslov obs4">
-          <div class="naslov-tr">
-            <h1 class="naslov-6">PRIJEVOD</h1>
-          </div>
-          <div class="naslov-tr">
-            <p class="opis-r">Trebate prijevod teksta s hrvatskog na francuski jezik? Nudimo stručne i kvalitetne prijevode u duhu francuskog jezika od strane izvornog govornika. Pismeni prijevodi obračunavaju se po kartici teksta (1500 znakova s razmacima).</p>
-          </div>
-          <div class="naslov-tr">
-            <div class="button-container-r">
-              <a class="button" href="#kontakt">zatražite ponudu</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="kontakt">
-        <div class="selector"  id="kontakt">
-        </div>
-        <div class="naslov-kontakt obs5">
-          <div class="naslov-tr">
-            <h1 class="naslov-7">KONTAKT</h1>
-            <ul class="lista-r">
-              <li><img class="kontakt-logo" src="images/logo_bijeli.png" alt="FRANKOFON"></li>
-              <li>obrt za usluge</li>
-              <li>vl. Rodolphe Sudon</li>
-              <li>Zagreb, Vodovodna 9</li>
-              <li>M: +385 95 881 9080</li>
-              <li>E: rodolphe.sudon@gmail.com</li>
-            </ul>
-          </div>
-        </div>
+    <div class="kitchen">
+      <div id="message_container" class="message">
+        <h1>Search the scene and click on the image to find evidence</h1>
+        <button id="message_close" class="close_button" onclick="closeMessage()"><span class="close">&times;</span></button>
+      </div>
+      <img class="kitchen_img" src="images/kitchen.png">
+      <button id="fridge" class="kitchen_button" onclick="showFridge()"></button>
+      <div id="fridge_container" class="reveal">
+        <h1>EVIDENCE 6:</h1>
+        <button id="fridge_close" class="close_button" onclick="closeFridge()"><span class="close">&times;</span></button>
+        <h2>Inside the fridge you find a bottle labeled "almond milk". You taste it, and you're absolutely sure it's standard cow's milk.</h2>
+      </div>
+      <button id="bottle" class="kitchen_button" onclick="showBottle()"></button>
+      <div id="bottle_container" class="reveal">
+        <h1>EVIDENCE 7:</h1>
+        <button id="bottle_close" class="close_button" onclick="closeBottle()"><span class="close">&times;</span></button>
+        <h2>There is an empty bottle on the kitchen counter. It wasn't there when the photo with Rita was taken. You open it and sense a distinctive smell of milk.</h2>
+      </div>
+      <button id="cocktail" class="kitchen_button" onclick="showCocktail()"></button>
+      <div id="cocktail_container" class="reveal">
+        <h1>EVIDENCE 8:</h1>
+        <button id="cocktail_close" class="close_button" onclick="closeCocktail()"><span class="close">&times;</span></button>
+        <h2>There is still some undrunk White Russian on the kitchen table. It seems that Jeniffer was poisoned with the cocktail, but everybody took a random glass, so the question is how could the murderer know which glass would Jeniffer take?</h2>
+      </div>
+      <button id="ashtray" class="kitchen_button" onclick="showAshtray()"></button>
+      <div id="ashtray_container" class="reveal">
+        <h1>EVIDENCE 9:</h1>
+        <button id="ashtray_close" class="close_button" onclick="closeAshtray()"><span class="close">&times;</span></button>
+        <h2>There is an ashtray on the terrace table with two cigarette butts inside.</h2>
+      </div>
+      <button id="door" class="kitchen_button" onclick="showDoor()"></button>
+      <div id="door_container" class="reveal">
+        <h1>EVIDENCE 10:</h1>
+        <button id="door_close" class="close_button" onclick="closeDoor()"><span class="close">&times;</span></button>
+        <h2>The door to the terrace can be opened only from the inside. You're sure it was closed all the time.</h2>
+      </div>
+      <button id="tape" class="kitchen_button" onclick="showTape()"></button>
+      <div id="tape_container" class="reveal">
+        <h1>EVIDENCE 11:</h1>
+        <button id="tape_close" class="close_button" onclick="closeTape()"><span class="close">&times;</span></button>
+        <h2>You find something on the floor. It looks like a piece of duct tape.</h2>
+      </div>
     </div>
+
   </div>
 
 </body>
-
-  <script type="text/javascript" src="script/jquery-3.6.0.min.js"></script>
-  <script type="text/javascript" src="script/script.js"></script>
+</html>
