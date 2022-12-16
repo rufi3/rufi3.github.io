@@ -25,13 +25,13 @@ body {
 
 .kitchen {
 	position: absolute;
-	width: 1100px;
+	width: 80%;
 	height: auto;
 }
 
 .kitchen_img {
 	position: relative;
-	max-width: 1100px;
+	max-width: 100px;
 	height: auto;
 }
 
@@ -95,6 +95,7 @@ body {
   background-color: #FFFAF0;
 	border: 3px solid black;
 	border-radius: 10px;
+	padding: 10px;
 	z-index: 6;
 }
 
@@ -110,9 +111,6 @@ body {
 }
 
 h1 {
-	position: absolute;
-	top: -25px;
-	left: 10px;
 	font-family: 'Kanit', sans-serif;
 	color: black;
   	font-size: 140%;
@@ -121,9 +119,6 @@ h1 {
 }
 
 h2 {
-	position: absolute;
-	top: 0px;
-	left: 10px;
 	font-family: 'Jost', sans-serif;
 	color: black;
   font-size: 120%;
