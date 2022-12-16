@@ -25,13 +25,13 @@ body {
 
 .kitchen {
 	position: absolute;
-	width: 80%;
+	width: 70em;
 	height: auto;
 }
 
 .kitchen_img {
 	position: relative;
-	max-width: 100%;
+	max-width: 70em;
 	height: auto;
 }
 
