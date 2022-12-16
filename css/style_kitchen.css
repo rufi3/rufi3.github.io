@@ -1,0 +1,566 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	background: transparent;
+	width: 100vw;
+	height: 100vh;
+	font-size: 16px;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+}
+
+.main {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kitchen {
+	position: absolute;
+	width: 1100px;
+	height: auto;
+}
+
+.kitchen_img {
+	position: relative;
+	max-width: 1100px;
+	height: auto;
+}
+
+.kitchen_button {
+	position: absolute;
+  background: transparent;
+  border: 1 solid black;
+  font-size: 0;
+	z-index: 5;
+}
+
+#fridge {
+	top: 275px;
+	left: 145px;
+	width: 35px;
+	height: 95px;
+}
+
+#bottle {
+	top: 305px;
+	left: 470px;
+	width: 30px;
+	height: 30px;
+}
+
+#cocktail {
+	top: 390px;
+	left: 725px;
+	width: 70px;
+	height: 55px;
+}
+
+#ashtray {
+	top: 320px;
+	left: 640px;
+	width: 20px;
+	height: 20px;
+}
+
+#door {
+	top: 300px;
+	left: 670px;
+	width: 90px;
+	height: 60px;
+}
+
+#tape {
+	top: 510px;
+	left: 420px;
+	width: 30px;
+	height: 30px;
+}
+
+.message {
+	position: absolute;
+  display: block;
+	width: 700px;
+	top: 80px;
+	left: 100px;
+	height: auto;
+  background-color: #FFFAF0;
+	border: 3px solid black;
+	border-radius: 10px;
+	padding: 10px;
+	z-index: 6;
+}
+
+.reveal {
+	position: absolute;
+  display: none;
+	width: 250px;
+	height: auto;
+  background-color: #FFFAF0;
+	border: 3px solid black;
+	border-radius: 10px;
+	padding: 10px;
+	z-index: 6;
+}
+
+h1 {
+	font-family: 'Kanit', sans-serif;
+	color: black;
+  font-size: 140%;
+	text-align: left;
+	padding-right: 15px;
+}
+
+h2 {
+	padding-top: 10px;
+	font-family: 'Jost', sans-serif;
+	color: black;
+  font-size: 120%;
+	text-align: justify;
+	line-height: 1.2;
+}
+
+.close_button {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 5px;
+	top: -25px;
+	font-family: 'Kanit', sans-serif;
+  background: transparent;
+	border: none;
+	color: black;
+  font-size: 350%;
+	padding: 0;
+}
+
+#fridge_container {
+	top: 240px;
+	left: 50px;
+}
+
+#bottle_container {
+	top: 240px;
+	left: 330px;
+}
+
+#cocktail_container {
+	top: 300px;
+	left: 645px;
+}
+
+#ashtray_container {
+	top: 260px;
+	left: 520px;
+}
+
+#door_container {
+	top: 260px;
+	left: 600px;
+}
+
+#tape_container {
+	top: 460px;
+	left: 320px;
+}
+
+@media (max-width: 1100px) {
+
+.kitchen {
+	width: 800px;
+}
+
+.kitchen_img {
+	max-width: 800px;
+}
+
+.message {
+	width: 600px;
+	top: 60px;
+	left: 80px;
+}
+
+h1 {
+  font-size: 120%;
+}
+
+h2 {
+  font-size: 100%;
+}
+
+.close_button {
+	top: -20px;
+  font-size: 300%;
+}
+
+#fridge {
+	top: 198px;
+	left: 102px;
+	width: 30px;
+	height: 75px;
+}
+
+#bottle {
+	top: 220px;
+	left: 340px;
+	width: 25px;
+	height: 25px;
+}
+
+#cocktail {
+	top: 280px;
+	left: 520px;
+	width: 60px;
+	height: 50px;
+}
+
+#ashtray {
+	top: 230px;
+	left: 465px;
+	width: 20px;
+	height: 20px;
+}
+
+#door {
+	top: 215px;
+	left: 490px;
+	width: 65px;
+	height: 50px;
+}
+
+#tape {
+	top: 370px;
+	left: 308px;
+	width: 25px;
+	height: 25px;
+}
+
+#fridge_container {
+	top: 180px;
+	left: 30px;
+}
+
+#bottle_container {
+	top: 180px;
+	left: 240px;
+}
+
+#cocktail_container {
+	top: 200px;
+	left: 455px;
+}
+
+#ashtray_container {
+	top: 180px;
+	left: 340px;
+}
+
+#door_container {
+	top: 180px;
+	left: 400px;
+}
+
+#tape_container {
+	top: 340px;
+	left: 190px;
+}
+
+}
+
+@media (max-width: 800px) {
+
+.kitchen {
+	width: 600px;
+}
+
+.kitchen_img {
+	max-width: 600px;
+}
+
+.message {
+	width: 520px;
+	top: 20px;
+	left: 40px;
+}
+
+h1 {
+  font-size: 110%;
+}
+
+h2 {
+  font-size: 100%;
+}
+
+.close_button {
+	top: -18px;
+  font-size: 270%;
+}
+
+#fridge {
+	top: 145px;
+	left: 75px;
+	width: 25px;
+	height: 62px;
+}
+
+#bottle {
+	top: 165px;
+	left: 255px;
+	width: 22px;
+	height: 22px;
+}
+
+#cocktail {
+	top: 207px;
+	left: 390px;
+	width: 45px;
+	height: 42px;
+}
+
+#ashtray {
+	top: 170px;
+	left: 345px;
+	width: 20px;
+	height: 20px;
+}
+
+#door {
+	top: 155px;
+	left: 365px;
+	width: 55px;
+	height: 50px;
+}
+
+#tape {
+	top: 277px;
+	left: 228px;
+	width: 23px;
+	height: 23px;
+}
+
+#fridge_container {
+	top: 120px;
+	left: 10px;
+}
+
+#bottle_container {
+	top: 120px;
+	left: 130px;
+}
+
+#cocktail_container {
+	top: 120px;
+	left: 310px;
+}
+
+#ashtray_container {
+	top: 120px;
+	left: 240px;
+}
+
+#door_container {
+	top: 110px;
+	left: 260px;
+}
+
+#tape_container {
+	top: 240px;
+	left: 110px;
+}
+
+}
+
+@media (max-width: 600px) {
+
+html::-webkit-scrollbar {
+	display: none;
+}
+
+html {
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+}
+
+.kitchen {
+	width: 450px;
+}
+
+.kitchen_img {
+	max-width: 450px;
+}
+
+.message {
+	width: 400px;
+	top: 15px;
+	left: 25px;
+}
+
+#fridge {
+	top: 106px;
+	left: 55px;
+	width: 20px;
+	height: 50px;
+}
+
+#bottle {
+	top: 120px;
+	left: 188px;
+	width: 20px;
+	height: 20px;
+}
+
+#cocktail {
+	top: 155px;
+	left: 290px;
+	width: 38px;
+	height: 35px;
+}
+
+#ashtray {
+	top: 127px;
+	left: 258px;
+	width: 18px;
+	height: 18px;
+}
+
+#door {
+	top: 115px;
+	left: 275px;
+	width: 42px;
+	height: 38px;
+}
+
+#tape {
+	top: 205px;
+	left: 169px;
+	width: 20px;
+	height: 20px;
+}
+
+#fridge_container {
+	top: 70px;
+	left: 10px;
+}
+
+#bottle_container {
+	top: 70px;
+	left: 70px;
+}
+
+#cocktail_container {
+	top: 65px;
+	left: 180px;
+}
+
+#ashtray_container {
+	top: 75px;
+	left: 120px;
+}
+
+#door_container {
+	top: 70px;
+	left: 160px;
+}
+
+#tape_container {
+	top: 155px;
+	left: 50px;
+}
+
+}
+
+@media (max-width: 320px) {
+
+.kitchen {
+	width: 300px;
+}
+
+.kitchen_img {
+	max-width: 300px;
+}
+
+.message {
+	width: 270px;
+	top: 10px;
+	left: 15px;
+}
+
+#fridge {
+	top: 69px;
+	left: 35px;
+	width: 17px;
+	height: 37px;
+}
+
+#bottle {
+	top: 80px;
+	left: 124px;
+	width: 16px;
+	height: 16px;
+}
+
+#cocktail {
+	top: 102px;
+	left: 192px;
+	width: 28px;
+	height: 26px;
+}
+
+#ashtray {
+	top: 83px;
+	left: 170px;
+	width: 15px;
+	height: 15px;
+}
+
+#door {
+	top: 77px;
+	left: 185px;
+	width: 28px;
+	height: 25px;
+}
+
+#tape {
+	top: 136px;
+	left: 111px;
+	width: 16px;
+	height: 16px;
+}
+
+#fridge_container {
+	top: 30px;
+	left: 10px;
+}
+
+#bottle_container {
+	top: 30px;
+	left: 30px;
+}
+
+#cocktail_container {
+	top: 10px;
+	left: 30px;
+}
+
+#ashtray_container {
+	top: 40px;
+	left: 30px;
+}
+
+#door_container {
+	top: 40px;
+	left: 30px;
+}
+
+#tape_container {
+	top: 80px;
+	left: 20px;
+}
+
+}
