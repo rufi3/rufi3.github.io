@@ -24,49 +24,21 @@
 <body>
   <div class="main">
 
-    <div class="kitchen">
+    <table class="kitchen">
+      <td class="kitchen_cell">
       <div id="message_container" class="message">
         <h1>Search the scene and click on the image to find evidence</h1>
         <button id="message_close" class="close_button" onclick="closeMessage()"><span class="close">&times;</span></button>
       </div>
       <img class="kitchen_img" src="images/kitchen.png">
-      <button id="fridge" class="kitchen_button" onclick="showFridge()"></button>
-      <div id="fridge_container" class="reveal">
-        <h1>EVIDENCE 6:</h1>
-        <button id="fridge_close" class="close_button" onclick="closeFridge()"><span class="close">&times;</span></button>
-        <h2>Inside the fridge you find a bottle labeled "almond milk". You taste it, and you're absolutely sure it's standard cow's milk.</h2>
-      </div>
-      <button id="bottle" class="kitchen_button" onclick="showBottle()"></button>
-      <div id="bottle_container" class="reveal">
-        <h1>EVIDENCE 7:</h1>
-        <button id="bottle_close" class="close_button" onclick="closeBottle()"><span class="close">&times;</span></button>
-        <h2>There is an empty bottle on the kitchen counter. It wasn't there when the photo with Rita was taken. You open it and sense a distinctive smell of milk.</h2>
-      </div>
-      <button id="cocktail" class="kitchen_button" onclick="showCocktail()"></button>
-      <div id="cocktail_container" class="reveal">
-        <h1>EVIDENCE 8:</h1>
-        <button id="cocktail_close" class="close_button" onclick="closeCocktail()"><span class="close">&times;</span></button>
-        <h2>There is still some undrunk White Russian on the kitchen table. It seems that Jeniffer was poisoned with the cocktail, but everybody took a random glass, so the question is how could the murderer know which glass would Jeniffer take?</h2>
-      </div>
-      <button id="ashtray" class="kitchen_button" onclick="showAshtray()"></button>
-      <div id="ashtray_container" class="reveal">
-        <h1>EVIDENCE 9:</h1>
-        <button id="ashtray_close" class="close_button" onclick="closeAshtray()"><span class="close">&times;</span></button>
-        <h2>There is an ashtray on the terrace table with two cigarette butts inside.</h2>
-      </div>
-      <button id="door" class="kitchen_button" onclick="showDoor()"></button>
-      <div id="door_container" class="reveal">
-        <h1>EVIDENCE 10:</h1>
-        <button id="door_close" class="close_button" onclick="closeDoor()"><span class="close">&times;</span></button>
-        <h2>The door to the terrace can be opened only from the inside. You're sure it was closed all the time.</h2>
-      </div>
-      <button id="tape" class="kitchen_button" onclick="showTape()"></button>
-      <div id="tape_container" class="reveal">
-        <h1>EVIDENCE 11:</h1>
-        <button id="tape_close" class="close_button" onclick="closeTape()"><span class="close">&times;</span></button>
-        <h2>You find something on the floor. It looks like a piece of duct tape.</h2>
-      </div>
-    </div>
+      <a id="fridge" class="kitchen_button" href="fridge.html"></a>
+      <a id="bottle" class="kitchen_button" href="bottle.html"></a>
+      <a id="cocktail" class="kitchen_button" onclick="cocktail.html"></a>
+      <a id="ashtray" class="kitchen_button" onclick="ashtray.html"></a>
+      <a id="door" class="kitchen_button" onclick="door.html"></a>
+      <a id="tape" class="kitchen_button" onclick="tape.html"></a>
+    </td>
+    </table>
 
   </div>
 
