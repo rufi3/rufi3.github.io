@@ -17,9 +17,6 @@ body {
 	width: 100%;
 	height: 100%;
 	display: flex;
-	flex-wrap: wrap;
-	min-width: 0;
-	min-height: 0;
   align-items: center;
   justify-content: center;
 }
@@ -28,6 +25,13 @@ body {
 	position: absolute;
 	width: 70em;
 	height: auto;
+}
+
+.kitchen_cell {
+	width: 100%;
+	height: auto;
+	vertical-align: center;
+	text-align: center;
 }
 
 .kitchen_img {
@@ -42,6 +46,70 @@ body {
   border: none;
   font-size: 0;
 	z-index: 5;
+}
+
+.evidence_img {
+	width: 50%;
+}
+
+.reveal {
+	position: relative;
+	width: 40%;
+	height: auto;
+  background-color: #FFFAF0;
+	border: 3px solid black;
+	border-radius: 20px;
+	border-collapse: separate;
+}
+
+.evidence_img_cell {
+	width: 100%;
+	vertical-align: center;
+	text-align: center;
+	height: auto;
+	padding: 20px;
+}
+
+.evidence_title {
+	width: 60%;
+	font-family: 'Kanit', sans-serif;
+	color: black;
+  font-size: 300%;
+	text-align: left;
+	vertical-align: center;
+	height: auto;
+	padding: 20px;
+}
+
+.evidence_description {
+	width: 100%;
+	font-family: 'Jost', sans-serif;
+	color: black;
+  font-size: 120%;
+	vertical-align: top;
+	text-align: justify;
+	line-height: 1.2;
+	height: auto;
+	padding: 20px;
+}
+
+.evidence_close {
+	width: 40%;
+	text-align: right;
+	height: auto;
+	padding: 20px;
+}
+
+.close_button {
+	position: absolute;
+	top: -12px;
+	right: 20px;
+	font-family: 'Kanit', sans-serif;
+  background: transparent;
+	border: none;
+	color: black;
+  font-size: 600%;
+	text-decoration: none;
 }
 
 #fridge {
@@ -97,50 +165,10 @@ body {
 	border: 3px solid black;
 	border-radius: 10px;
 	padding: 10px;
-	margin: -10px 0;
 	z-index: 6;
 }
 
-.reveal {
-	position: absolute;
-  	display: none;
-	width: 250px;
-	height: auto;
- 	background-color: #FFFAF0;
-	border: 3px solid black;
-	border-radius: 10px;
-	z-index: 6;
-}
 
-h1 {
-	font-family: 'Kanit', sans-serif;
-	color: red;
-  	font-size: 140%;
-	text-align: left;
-	padding-right: 15px;
-}
-
-h2 {
-	font-family: 'Jost', sans-serif;
-	color: black;
-  font-size: 120%;
-	text-align: justify;
-	line-height: 1.2;
-}
-
-.close_button {
-	width: 30px;
-	height: 30px;
-	position: absolute;
-	right: 5px;
-	top: -25px;
-	font-family: 'Kanit', sans-serif;
-  background: transparent;
-	border: none;
-	color: black;
-  font-size: 350%;
-	padding: 0;
-}
 
 #fridge_container {
 	top: 240px;
@@ -534,6 +562,8 @@ html {
 	width: 16px;
 	height: 16px;
 }
+
+
 
 #fridge_container {
 	top: 30px;
