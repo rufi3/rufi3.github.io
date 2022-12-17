@@ -27,13 +27,6 @@ body {
 	height: auto;
 }
 
-.kitchen_cell {
-	width: 100%;
-	height: auto;
-	vertical-align: center;
-	text-align: center;
-}
-
 .kitchen_img {
 	position: relative;
 	max-width: 70em;
