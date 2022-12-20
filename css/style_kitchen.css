@@ -251,17 +251,17 @@ body {
 
 }
 
-@media (max-width: 770px) {
+@media (max-width: 790px) {
 
 .kitchen {
 	position: absolute;
-	width: 40em;
+	width: 750px;
 	height: auto;
 }
 
 .kitchen_img {
 	position: relative;
-	max-width: 40em;
+	max-width: 750px;
 	height: auto;
 }
 
@@ -270,45 +270,45 @@ body {
 }
 
 #fridge {
-	top: 157px;
-	left: 80px;
-	width: 25px;
-	height: 62px;
+	top: 184px;
+	left: 96px;
+	width: 28px;
+	height: 72px;
 }
 
 #bottle {
-	top: 173px;
-	left: 270px;
-	width: 25px;
-	height: 25px;
+	top: 205px;
+	left: 318px;
+	width: 28px;
+	height: 28px;
 }
 
 #cocktail {
-	top: 220px;
-	left: 418px;
-	width: 45px;
-	height: 42px;
+	top: 260px;
+	left: 490px;
+	width: 50px;
+	height: 48px;
 }
 
 #ashtray {
-	top: 180px;
-	left: 370px;
-	width: 20px;
-	height: 20px;
+	top: 213px;
+	left: 432px;
+	width: 25px;
+	height: 23px;
 }
 
 #door {
-	top: 165px;
-	left: 390px;
-	width: 60px;
+	top: 200px;
+	left: 458px;
+	width: 65px;
 	height: 50px;
 }
 
 #tape {
-	top: 293px;
-	left: 243px;
-	width: 25px;
-	height: 25px;
+	top: 348px;
+	left: 285px;
+	width: 28px;
+	height: 28px;
 }
 
 }
@@ -461,6 +461,64 @@ html {
 #tape {
 	top: 207px;
 	left: 170px;
+	width: 17px;
+	height: 17px;
+}
+
+}
+
+@media (max-width: 380px) {
+
+.kitchen {
+	position: absolute;
+	width: 350px;
+	height: auto;
+}
+
+.kitchen_img {
+	position: relative;
+	max-width: 350px;
+	height: auto;
+}
+
+#fridge {
+	top: 83px;
+	left: 43px;
+	width: 17px;
+	height: 40px;
+}
+
+#bottle {
+	top: 94px;
+	left: 146px;
+	width: 17px;
+	height: 17px;
+}
+
+#cocktail {
+	top: 118px;
+	left: 225px;
+	width: 33px;
+	height: 30px;
+}
+
+#ashtray {
+	top: 98px;
+	left: 198px;
+	width: 16px;
+	height: 16px;
+}
+
+#door {
+	top: 87px;
+	left: 215px;
+	width: 32px;
+	height: 30px;
+}
+
+#tape {
+	top: 160px;
+	left: 130px;
 	width: 17px;
 	height: 17px;
 }
