@@ -2,54 +2,37 @@ let vh = window.innerHeight * 0.1
 
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-function closeMessage() {
-   document.getElementById('message_container').style.display = "none";
-}
+// Extended solution for hiding address bar:
 
-function showFridge() {
-   document.getElementById('fridge_container').style.display = "block";
-}
+(function() {
 
-function closeFridge() {
-   document.getElementById('fridge_container').style.display = "none";
-}
+  var browser = window,
+      doc = browser.document;
 
-function showBottle() {
-   document.getElementById('bottle_container').style.display = "block";
-}
+  // If there's a hash, or addEventListener is undefined, stop here
+  if ( !location.hash || !browser.addEventListener ) {
 
-function closeBottle() {
-   document.getElementById('bottle_container').style.display = "none";
-}
+    //set to 1
+    window.scrollTo( 0, 1 );
+    var scrollTop = 1,
 
-function showCocktail() {
-   document.getElementById('cocktail_container').style.display = "block";
-}
+    //reset to 0 if needed
+    checkWindowBody = setInterval(function(){
+      if( doc.body ){
+        clearInterval( checkWindowBody );
+        scrollTop = "scrollTop" in doc.body ? doc.body.scrollTop : 1;
+        browser.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
+      }
+    }, 15 );
 
-function closeCocktail() {
-   document.getElementById('cocktail_container').style.display = "none";
-}
+    if (browser.addEventListener) {
+      browser.addEventListener("load", function(){
+        setTimeout(function(){
+          //reset to hide address
+          browser.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
+        }, 0);
+      }, false );
+    }
+  }
 
-function showAshtray() {
-   document.getElementById('ashtray_container').style.display = "block";
-}
-
-function closeAshtray() {
-   document.getElementById('ashtray_container').style.display = "none";
-}
-
-function showDoor() {
-   document.getElementById('door_container').style.display = "block";
-}
-
-function closeDoor() {
-   document.getElementById('door_container').style.display = "none";
-}
-
-function showTape() {
-   document.getElementById('tape_container').style.display = "block";
-}
-
-function closeTape() {
-   document.getElementById('tape_container').style.display = "none";
-}
+})();
