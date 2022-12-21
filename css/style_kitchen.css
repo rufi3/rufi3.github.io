@@ -13,14 +13,6 @@ body {
 	height: 100%;
 }
 
-.main_kitchen {
-	width: 100%;
-	height: 100%;
-	display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .main {
 	width: 100%;
 	height: 100%;
@@ -67,6 +59,17 @@ body {
 	color: black;
   font-size: 330%;
 	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.close_button_message:focus {
+  outline: none !important;
 }
 
 .kitchen {
@@ -77,6 +80,7 @@ body {
 
 .kitchen_img {
 	position: relative;
+	display: block;
 	max-width: 1120px;
 	height: auto;
 }
@@ -153,7 +157,17 @@ body {
 	color: black;
   font-size: 600%;
 	text-decoration: none;
-  outline: none;
+	-webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.close_button:focus {
+    outline: none !important;
 }
 
 #fridge {
@@ -201,15 +215,11 @@ body {
 @media (max-width: 1025px) {
 
 .kitchen {
-	position: absolute;
 	width: 800px;
-	height: auto;
 }
 
 .kitchen_img {
-	position: relative;
 	max-width: 800px;
-	height: auto;
 }
 
 .reveal {
@@ -262,16 +272,24 @@ body {
 
 @media (max-width: 790px) {
 
+html::-webkit-scrollbar {
+	display: none;
+}
+
+html {
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+}
+
 .kitchen {
-	position: absolute;
-	width: 750px;
-	height: auto;
+	position: relative;
+	width: 100%;
 }
 
 .kitchen_img {
-	position: relative;
 	max-width: 750px;
-	height: auto;
+	margin: 0 auto;
+	padding: 70px 0;
 }
 
 .main {
@@ -354,25 +372,12 @@ body {
 
 @media (max-width: 640px) {
 
-html::-webkit-scrollbar {
-	display: none;
-}
-
-html {
-	-ms-overflow-style: none;  /* IE and Edge */
-	scrollbar-width: none;  /* Firefox */
-}
-
 .kitchen {
-	position: absolute;
-	width: 592px;
-	height: auto;
+	width: 100%;
 }
 
 .kitchen_img {
-	position: relative;
 	max-width: 592px;
-	height: auto;
 }
 
 #fridge {
@@ -424,13 +429,12 @@ html {
 .kitchen {
 	position: absolute;
 	width: 448px;
-	height: auto;
 }
 
 .kitchen_img {
-	position: relative;
 	max-width: 448px;
-	height: auto;
+	margin: 0 auto;
+	padding: 0;
 }
 
 .main {
@@ -502,15 +506,11 @@ html {
 @media (max-width: 400px) {
 
 .kitchen {
-	position: absolute;
 	width: 350px;
-	height: auto;
 }
 
 .kitchen_img {
-	position: relative;
 	max-width: 350px;
-	height: auto;
 }
 
 #fridge {
