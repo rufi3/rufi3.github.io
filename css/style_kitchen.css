@@ -265,8 +265,38 @@ body {
 	height: auto;
 }
 
+.main {
+	display: block;
+}
+
 .reveal {
 	width: 70%;
+	margin: 70px auto;
+}
+
+.evidence_img {
+	max-width: 30%;
+	max-height: 30%;
+}
+
+.evidence_img_cell {
+	padding: 15px;
+}
+
+.evidence_title {
+  font-size: 170%;
+	padding: 15px;
+}
+
+.evidence_description {
+  font-size: 100%;
+	padding: 15px;
+}
+
+.close_button {
+	top: -5px;
+	right: 15px;
+  font-size: 350%;
 }
 
 #fridge {
@@ -336,35 +366,6 @@ html {
 	height: auto;
 }
 
-.reveal {
-	width: 70%;
-}
-
-.evidence_img {
-	max-width: 30%;
-	max-height: 30%;
-}
-
-.evidence_img_cell {
-	padding: 15px;
-}
-
-.evidence_title {
-  font-size: 170%;
-	padding: 15px;
-}
-
-.evidence_description {
-  font-size: 100%;
-	padding: 15px;
-}
-
-.close_button {
-	top: -5px;
-	right: 15px;
-  font-size: 350%;
-}
-
 #fridge {
 	top: 142px;
 	left: 75px;
@@ -423,6 +424,11 @@ html {
 	height: auto;
 }
 
+.main {
+	display: flex;
+	margin: 0;
+}
+
 #fridge {
 	top: 108px;
 	left: 57px;
@@ -467,7 +473,7 @@ html {
 
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
 
 .kitchen {
 	position: absolute;
