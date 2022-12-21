@@ -283,13 +283,14 @@ html {
 
 .kitchen {
 	position: relative;
-	width: 100%;
+	width: 750px;
+	margin: 0 auto;
 }
 
 .kitchen_img {
 	max-width: 750px;
 	margin: 0 auto;
-	padding: 70px 0;
+	padding: 20px 0;
 }
 
 .main {
@@ -327,42 +328,42 @@ html {
 }
 
 #fridge {
-	top: 184px;
+	top: 204px;
 	left: 96px;
 	width: 28px;
 	height: 72px;
 }
 
 #bottle {
-	top: 205px;
+	top: 225px;
 	left: 318px;
 	width: 28px;
 	height: 28px;
 }
 
 #cocktail {
-	top: 260px;
+	top: 280px;
 	left: 490px;
 	width: 50px;
 	height: 48px;
 }
 
 #ashtray {
-	top: 213px;
+	top: 233px;
 	left: 432px;
 	width: 25px;
 	height: 23px;
 }
 
 #door {
-	top: 200px;
+	top: 220px;
 	left: 458px;
 	width: 65px;
 	height: 50px;
 }
 
 #tape {
-	top: 348px;
+	top: 368px;
 	left: 285px;
 	width: 28px;
 	height: 28px;
@@ -373,7 +374,7 @@ html {
 @media (max-width: 640px) {
 
 .kitchen {
-	width: 100%;
+	width: 592px;
 }
 
 .kitchen_img {
@@ -381,42 +382,42 @@ html {
 }
 
 #fridge {
-	top: 142px;
+	top: 162px;
 	left: 75px;
 	width: 24px;
 	height: 62px;
 }
 
 #bottle {
-	top: 159px;
+	top: 179px;
 	left: 250px;
 	width: 23px;
 	height: 25px;
 }
 
 #cocktail {
-	top: 205px;
+	top: 225px;
 	left: 387px;
 	width: 43px;
 	height: 38px;
 }
 
 #ashtray {
-	top: 167px;
+	top: 187px;
 	left: 342px;
 	width: 18px;
 	height: 18px;
 }
 
 #door {
-	top: 158px;
+	top: 178px;
 	left: 362px;
 	width: 50px;
 	height: 40px;
 }
 
 #tape {
-	top: 272px;
+	top: 292px;
 	left: 223px;
 	width: 25px;
 	height: 25px;
