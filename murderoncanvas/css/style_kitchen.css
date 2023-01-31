@@ -1,0 +1,572 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	background: transparent;
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+  background-color: black;
+}
+
+.main {
+	width: 100%;
+	height: 100%;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message {
+	position: relative;
+	width: 70%;
+	height: auto;
+  background-color: #dfdfdf;
+	border: 3px solid black;
+	border-radius: 20px;
+	border-collapse: separate;
+}
+
+.message_title {
+	width: 90%;
+	font-family: 'Martian Mono', monospace;
+	color: #262626;
+  font-size: 150%;
+	line-height: 1.2;
+	text-align: left;
+	vertical-align: center;
+	height: auto;
+	padding: 20px;
+}
+
+.message_close {
+	width: 10%;
+	text-align: right;
+	height: auto;
+	padding: 20px;
+}
+
+.close_button_message {
+	position: absolute;
+	top: 5px;
+	right: 20px;
+	font-family: 'Martian Mono', monospace;
+  background: transparent;
+	border: none;
+	color: #262626;
+  font-size: 330%;
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.close_button_message:focus {
+  outline: none !important;
+}
+
+.kitchen {
+	position: absolute;
+	width: 1120px;
+	height: auto;
+}
+
+.kitchen_img {
+	position: relative;
+	display: block;
+	max-width: 1120px;
+	height: auto;
+}
+
+.kitchen_button {
+	position: absolute;
+  background: transparent;
+	border: none;
+  font-size: 0;
+	z-index: 5;
+	cursor: default;
+}
+
+.evidence_img {
+	max-width: 40%;
+	max-height: 40%;
+}
+
+.reveal {
+	position: relative;
+	width: 40%;
+	height: auto;
+  background-color: #dfdfdf;
+	border: 3px solid black;
+	border-radius: 20px;
+	border-collapse: separate;
+}
+
+.evidence_img_cell {
+	width: 100%;
+	vertical-align: center;
+	text-align: center;
+	height: auto;
+	padding: 20px;
+}
+
+.evidence_title {
+	width: 80%;
+	font-family: 'Bebas Neue', cursive;
+	color: black;
+  font-size: 300%;
+	text-align: left;
+	vertical-align: center;
+	height: auto;
+	padding: 30px 20px 20px 20px;
+}
+
+.evidence_background {
+	background-color: #FFF100;
+	padding: 5px 25px;
+	width: 238px;
+  transform: rotate(-6deg);
+}
+
+.evidence_description {
+	width: 100%;
+	font-family: 'Karla', sans-serif;
+	color: #262626;
+  font-size: 120%;
+	vertical-align: top;
+	text-align: justify;
+	line-height: 1.2;
+	height: auto;
+	padding: 20px;
+}
+
+.evidence_close {
+	width: 20%;
+	text-align: right;
+	height: auto;
+	padding: 20px;
+}
+
+.close_button {
+	position: absolute;
+	top: -12px;
+	right: 20px;
+	font-family: 'Martian Mono', monospace;
+  background: transparent;
+	border: none;
+	color: #262626;
+  font-size: 600%;
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.close_button:focus {
+    outline: none !important;
+}
+
+#fridge {
+	top: 275px;
+	left: 145px;
+	width: 38px;
+	height: 105px;
+}
+
+#bottle {
+	top: 310px;
+	left: 477px;
+	width: 32px;
+	height: 32px;
+}
+
+#cocktail {
+	top: 393px;
+	left: 730px;
+	width: 80px;
+	height: 65px;
+}
+
+#ashtray {
+	top: 325px;
+	left: 653px;
+	width: 25px;
+	height: 25px;
+}
+
+#door {
+	top: 300px;
+	left: 680px;
+	width: 100px;
+	height: 65px;
+}
+
+#tape {
+	top: 519px;
+	left: 428px;
+	width: 35px;
+	height: 35px;
+}
+
+@media (max-width: 1025px) {
+
+.kitchen {
+	width: 800px;
+}
+
+.kitchen_img {
+	max-width: 800px;
+}
+
+.reveal {
+	width: 50%;
+}
+
+#fridge {
+	top: 198px;
+	left: 102px;
+	width: 30px;
+	height: 75px;
+}
+
+#bottle {
+	top: 220px;
+	left: 340px;
+	width: 25px;
+	height: 25px;
+}
+
+#cocktail {
+	top: 280px;
+	left: 520px;
+	width: 60px;
+	height: 50px;
+}
+
+#ashtray {
+	top: 230px;
+	left: 465px;
+	width: 20px;
+	height: 20px;
+}
+
+#door {
+	top: 215px;
+	left: 490px;
+	width: 65px;
+	height: 50px;
+}
+
+#tape {
+	top: 370px;
+	left: 308px;
+	width: 25px;
+	height: 25px;
+}
+
+}
+
+@media (max-width: 790px) {
+
+html::-webkit-scrollbar {
+	display: none;
+}
+
+html {
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+}
+
+.kitchen {
+	position: relative;
+	width: 750px;
+	margin: 0 auto;
+}
+
+.kitchen_img {
+	max-width: 750px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+.main {
+	display: block;
+}
+
+.reveal {
+	width: 70%;
+	margin: 70px auto;
+}
+
+.evidence_img {
+	max-width: 0%;
+	max-height: 0%;
+}
+
+.evidence_img_cell {
+	padding: 0px;
+}
+
+.evidence_title {
+  font-size: 170%;
+	padding: 20px 15px 0 15px;
+}
+
+.evidence_background {
+	width: 155px;
+}
+
+.evidence_description {
+  font-size: 100%;
+	padding: 0px 15px 15px 15px;
+}
+
+.close_button {
+	top: -5px;
+	right: 15px;
+  font-size: 350%;
+}
+
+#fridge {
+	top: 204px;
+	left: 96px;
+	width: 28px;
+	height: 72px;
+}
+
+#bottle {
+	top: 225px;
+	left: 318px;
+	width: 28px;
+	height: 28px;
+}
+
+#cocktail {
+	top: 280px;
+	left: 490px;
+	width: 50px;
+	height: 48px;
+}
+
+#ashtray {
+	top: 233px;
+	left: 432px;
+	width: 25px;
+	height: 23px;
+}
+
+#door {
+	top: 220px;
+	left: 458px;
+	width: 65px;
+	height: 50px;
+}
+
+#tape {
+	top: 368px;
+	left: 285px;
+	width: 28px;
+	height: 28px;
+}
+
+}
+
+@media (max-width: 640px) {
+
+.kitchen {
+	width: 592px;
+}
+
+.kitchen_img {
+	max-width: 592px;
+}
+
+#fridge {
+	top: 162px;
+	left: 75px;
+	width: 24px;
+	height: 62px;
+}
+
+#bottle {
+	top: 179px;
+	left: 250px;
+	width: 23px;
+	height: 25px;
+}
+
+#cocktail {
+	top: 225px;
+	left: 387px;
+	width: 43px;
+	height: 38px;
+}
+
+#ashtray {
+	top: 187px;
+	left: 342px;
+	width: 18px;
+	height: 18px;
+}
+
+#door {
+	top: 178px;
+	left: 362px;
+	width: 50px;
+	height: 40px;
+}
+
+#tape {
+	top: 292px;
+	left: 223px;
+	width: 25px;
+	height: 25px;
+}
+
+}
+
+@media (max-width: 500px) {
+
+.kitchen {
+	position: absolute;
+	width: 448px;
+}
+
+.kitchen_img {
+	max-width: 448px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.main {
+	display: flex;
+}
+
+.evidence_img {
+	max-width: 30%;
+	max-height: 30%;
+}
+
+.evidence_img_cell {
+	padding: 15px;
+}
+
+
+.evidence_title {
+	padding: 20px 15px 15px 15px;
+}
+
+.evidence_description {
+	padding: 15px;
+}
+
+#fridge {
+	top: 108px;
+	left: 57px;
+	width: 17px;
+	height: 47px;
+}
+
+#bottle {
+	top: 122px;
+	left: 188px;
+	width: 18px;
+	height: 18px;
+}
+
+#cocktail {
+	top: 153px;
+	left: 290px;
+	width: 35px;
+	height: 32px;
+}
+
+#ashtray {
+	top: 124px;
+	left: 257px;
+	width: 17px;
+	height: 17px;
+}
+
+#door {
+	top: 115px;
+	left: 274px;
+	width: 39px;
+	height: 33px;
+}
+
+#tape {
+	top: 207px;
+	left: 170px;
+	width: 17px;
+	height: 17px;
+}
+
+}
+
+@media (max-width: 400px) {
+
+.kitchen {
+	width: 350px;
+}
+
+.kitchen_img {
+	max-width: 350px;
+}
+
+#fridge {
+	top: 83px;
+	left: 43px;
+	width: 17px;
+	height: 40px;
+}
+
+#bottle {
+	top: 94px;
+	left: 146px;
+	width: 17px;
+	height: 17px;
+}
+
+#cocktail {
+	top: 118px;
+	left: 225px;
+	width: 33px;
+	height: 30px;
+}
+
+#ashtray {
+	top: 98px;
+	left: 198px;
+	width: 16px;
+	height: 16px;
+}
+
+#door {
+	top: 87px;
+	left: 215px;
+	width: 32px;
+	height: 30px;
+}
+
+#tape {
+	top: 160px;
+	left: 130px;
+	width: 17px;
+	height: 17px;
+}
+
+}
