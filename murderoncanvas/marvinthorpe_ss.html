@@ -1,0 +1,452 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Soup - Marvin Thorpe</title>
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+  <script src="https://kit.fontawesome.com/706520c77c.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="preload" type="font/woff2" as="font" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap" rel="preload" type="font/woff2" as="font" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="preload" type="font/woff2" as="font" crossorigin>
+  <script type="text/javascript" src="javascript/script_critic.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style_critic.css">
+</head>
+
+<body>
+  <div class="header">
+    <img class="profil" src="images/profil.png">
+    <div class="header_right">
+      <h1>Marvin Thorpe</h1>
+      <h2>Art Enthusiast and Content Creator</h2>
+    </div>
+  </div>
+
+  <div class="main">
+
+    <table class="stats">
+      <tr class="stats_numbers">
+        <td class="stats_cell">9,524</td>
+        <td class="stats_cell" id="followers">62,136</td>
+        <td class="stats_cell">2,015</td>
+      </tr>
+      <tr class="stats_text">
+        <td class="stats_cell">posts</td>
+        <td class="stats_cell">followers</td>
+        <td class="stats_cell">following</td>
+      </tr>
+    </table>
+    <button class="follow" id="follow" type="button" onclick="change_text();change_button()">Follow</button>
+
+    <table class="post">
+      <tr class="post_row">
+        <td class="post_cell_img">
+          <img class="post_img" id="critic09" src="images/critic09.png" onclick="enlargeImg09()">
+          <table class="post_likes">
+            <td class="post_likes_cell"><button class="like" id="like09" type="button" onclick="change_likes09()"><i class="fa-regular fa-heart"></i></button></td>
+            <td class="post_likesnumber_cell"><p class="like_number" id="like_number09">268</p></td>
+            <td class="post_date_cell"><p class="post_date">28 March 2022</p></td>
+          </table>
+          <p class="post_text">Having a little get-together at Jennifer Perks' studio in the woods. It's been less than a week since the opening of her exhibition, and all I can say is that she is already busy with new work. This girl never stops!</p>
+        </td>
+        <td class="post_cell">
+          <button class="comments_title" id="comments_title09" type="button" onclick="toggle_comments09()">Show comments</button>
+          <table class="comments_all" id="comments_all09">
+            <tr class="comments_row">
+              <td class="comments_cell_img">
+                <img class="comments_img" src="images/comments08.png">
+              </td>
+              <td class="comments_cell">
+                <p class="comments_text"><em>Mary Bird</em> Wow, sounds exciting! <span> 🤩 </span></p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr class="post_row">
+        <td class="post_cell_img">
+          <img class="post_img" id="critic08" src="images/critic08.png" onclick="enlargeImg08()">
+          <table class="post_likes">
+            <td class="post_likes_cell"><button class="like" id="like08" type="button" onclick="change_likes08()"><i class="fa-regular fa-heart"></i></button></td>
+            <td class="post_likesnumber_cell"><p class="like_number" id="like_number08">18,409</p></td>
+            <td class="post_date_cell"><p class="post_date">16 February 2022</p></td>
+          </table>
+          <p class="post_text">I had the privilege of taking a sneak peek at a few paintings that will be part of Jennifer Perks’ new exhibition, and what I saw is the future of art itself.</p>
+        </td>
+        <td class="post_cell">
+          <button class="comments_title" id="comments_title08" type="button" onclick="toggle_comments08()">Show comments</button>
+          <table class="comments_all" id="comments_all08">
+            <tr class="comments_row">
+              <td class="comments_cell_img">
+                <img class="comments_img" src="images/comments01.png">
+              </td>
+              <td class="comments_cell">
+                <p class="comments_text"><em>Marc Potin</em> Glad to hear you change your mind about Jennifer Perks, I thought you were a bit too harsh a couple of months ago <span> 👏 </span></p>
+              </td>
+            </tr>
+            <tr class="comments_row">
+              <td class="comments_cell_img">
+                <img class="comments_img" src="images/comments08.png">
+              </td>
+              <td class="comments_cell">
+                <p class="comments_text"><em>Mary Bird</em> Definitely agree with this one, Jennifer is THE best <span> 😎 </span></p>
+              </td>
+            </tr>
+            <tr class="comments_row">
+              <td class="comments_cell_img">
+                <img class="comments_img" src="images/comments06.png">
+              </td>
+              <td class="comments_cell">
+                <p class="comments_text"><em>Rory Zane</em> I guess her new work must be better than the old one. I'll have to trust you on this <span> 😉 </span></p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr class="post_row">
+        <td class="post_cell_img">
+          <img class="post_img" id="critic07" src="images/critic07.png" onclick="enlargeImg07()">
+          <table class="post_likes">
+            <td class="post_likes_cell"><button class="like" id="like07" type="button" onclick="change_likes07()"><i class="fa-regular fa-heart"></i></button></td>
+            <td class="post_likesnumber_cell"><p class="like_number" id="like_number07">15,112</p></td>
+            <td class="post_date_cell"><p class="post_date">27 January 2022</p></td>
+          </table>
+          <p class="post_text">Spending a week in Bangkok, and I have to say, the street art scene here is one of the most fertile I've ever seen!</p>
+        </td>
+        <td class="post_cell">
+          <button class="comments_title" id="comments_title07" type="button" onclick="toggle_comments07()">Show comments</button>
+          <table class="comments_all" id="comments_all07">
+            <tr class="comments_row">
+              <td class="comments_cell_img">
+                <img class="comments_img" src="images/comments01.png">
+              </td>
+              <td class="comments_cell">
+                <p class="comments_text"><em>Marc Potin</em> I was in Thailand a few years ago, and you're totally right. What they do there is out of this world <span> 👽 </span></p>
+              </td>
+            </tr>
+            <tr class="comments_row">
+              <td class="comments_cell_img">
+                <img class="comments_img" src="images/comments07.png">
+              </td>
+              <td class="comments_cell">
+                <p class="comments_text"><em>Jeane Bélanger</em> I wish you had told me you were interested in street art as well. I would have shown you some great work in Paris <span> 😻 </span></p>
+              </td>
+            </tr>
+            <tr class="comments_row">
+              <td class="comments_cell_img">
+                <img class="comments_img" src="images/comments04.png">
+              </td>
+              <td class="comments_cell">
+                <p class="comments_text"><em>Ferenjin</em> Great to see you speak about street art, and I'm sure that this could bring up your younger followers number. Keep it up, I'd love to see more content of this kind! <span> 👶 </span><span> ✖ </span><span> 1️⃣ </span></p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr class="post_row">
+        <td class="post_cell_img">
+          <img class="post_img" id="critic06" src="images/critic06.png" onclick="enlargeImg06()">
+          <table class="post_likes">
+            <td class="post_likes_cell"><button class="like" id="like06" type="button" onclick="change_likes06()"><i class="fa-regular fa-heart"></i></button></td>
+            <td class="post_likesnumber_cell"><p class="like_number" id="like_number06">8,572</p></td>
+            <td class="post_date_cell"><p class="post_date">17 January 2022</p></td>
+          </table>
+          <p class="post_text">And it is THE place! ARRRT, a brand new gallery/bar in Stockholm really checks all the boxes. You can finally enjoy your favourite gin AND the work of your favourite artist at the same time. Don't miss out on this one!</p>
+        </td>
+        <td class="post_cell">
+          <button class="comments_title" id="comments_title06" type="button" onclick="toggle_comments06()">Show comments</button>
+          <table class="comments_all" id="comments_all06">
+            <tr class="comments_row">
+              <td class="comments_cell_img">
+                <img class="comments_img" src="images/comments04.png">
+              </td>
+              <td class="comments_cell">
+                <p class="comments_text"><em>Ferenjin</em> I saw you at the opening! I agree that the place is cool, but I simply hate fake champagne. We all know that is sparkling wine they are serving, right? <span> 😡 </span><span> ✖ </span><span> 🍾 </span></p>
+              </td>
+            </tr>
+            <tr class="comments_row">
+              <td class="comments_cell_img">
+                <img class="comments_img" src="images/comments02.png">
+              </td>
+              <td class="comments_cell">
+                <p class="comments_text"><em>Fodor Varga</em> Seems great! We have something similar in Budapest, but there are never any important artists showing there <span> 😒 </span></p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr class="post_row">
+        <td class="post_cell_img">
+          <img class="post_img" id="critic05" src="images/critic05.png" onclick="enlargeImg05()">
+          <table class="post_likes">
+            <td class="post_likes_cell"><button class="like" id="like05" type="button" onclick="change_likes05()"><i class="fa-regular fa-heart"></i></button></td>
+            <td class="post_likesnumber_cell"><p class="like_number" id="like_number05">13,208</p></td>
+            <td class="post_date_cell"><p class="post_date">10 January 2022</p></td>
+          </table>
+          <p class="post_text">Again on the move! This time I'm in Amsterdam. Check out the abstract world of Dennis Baeten, famous for his purity of movement and dramatic use of color. Open till February 03 in Stedelijk Museum.</p>
+        </td>
+        <td class="post_cell">
+          <button class="comments_title" id="comments_title05" type="button" onclick="toggle_comments05()">Show comments</button>
+          <table class="comments_all" id="comments_all05">
+            <tr class="comments_row">
+              <td class="comments_cell_img">
+                <img class="comments_img" src="images/comments08.png">
+              </td>
+              <td class="comments_cell">
+                <p class="comments_text"><em>Mary Bird</em> Absolutely amazing! <span> 🤩 </span> Wish I was in Amsterdam right now</p>
+              </td>
+            </tr>
+            <tr class="comments_row">
+              <td class="comments_cell_img">
+                <img class="comments_img" src="images/comments04.png">
+              </td>
+              <td class="comments_cell">
+                <p class="comments_text"><em>Ferenjin</em> I like your view on this one. The art is simple but right to the point <span> 👍 </span><span> ✖ </span><span> 👀 </span></p>
+              </td>
+            </tr>
+            <tr class="comments_row">
+              <td class="comments_cell_img">
+                <img class="comments_img" src="images/comments01.png">
+              </td>
+              <td class="comments_cell">
+                <p class="comments_text"><em>Marc Potin</em> The Dutch scene is quite exciting right now, did you see the work of Anika Mooren? <span> 🤯 </span></p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr class="post_row">
+        <td class="post_cell_img">
+          <img class="post_img" id="critic04" src="images/critic04.png" onclick="enlargeImg04()">
+          <table class="post_likes">
+            <td class="post_likes_cell"><button class="like" id="like04" type="button" onclick="change_likes04()"><i class="fa-regular fa-heart"></i></button></td>
+            <td class="post_likesnumber_cell"><p class="like_number" id="like_number04">17,556</p></td>
+            <td class="post_date_cell"><p class="post_date">02 January 2022</p></td>
+          </table>
+          <p class="post_text">I'm still recovering from the party, so today I won't be posting a picture of myself <span> 😁 </span> Thank you followers, so many of you joined my journey in the last year! I love you guys! <span> 🥰 </span></p>
+        </td>
+        <td class="post_cell">
+          <button class="comments_title" id="comments_title04" type="button" onclick="toggle_comments04()">Show comments</button>
+          <table class="comments_all" id="comments_all04">
+            <tr class="comments_row">
+              <td class="comments_cell_img">
+                <img class="comments_img" src="images/comments08.png">
+              </td>
+              <td class="comments_cell">
+                <p class="comments_text"><em>Mary Bird</em> We love you too Marvin! <span> 💗 </span> Wish you all the best in 2022!</p>
+              </td>
+            </tr>
+            <tr class="comments_row">
+              <td class="comments_cell_img">
+                <img class="comments_img" src="images/comments06.png">
+              </td>
+              <td class="comments_cell">
+                <p class="comments_text"><em>Rory Zane</em> You're our art guru <span> 😆 </span> Seriously though, I love discovering art with you man</p>
+              </td>
+            </tr>
+            <tr class="comments_row">
+              <td class="comments_cell_img">
+                <img class="comments_img" src="images/comments04.png">
+              </td>
+              <td class="comments_cell">
+                <p class="comments_text"><em>Ferenjin</em> This is exactly what I love about Internet. Being able to see inspiring art from all over the world, all from the comfort of my couch. And it's thanks to you, Marvin! <span> 💗 </span><span> ✖ </span><span> 🌐 </span></p>
+              </td>
+            </tr>
+            <tr class="comments_row">
+              <td class="comments_cell_img">
+                <img class="comments_img" src="images/comments07.png">
+              </td>
+              <td class="comments_cell">
+                <p class="comments_text"><em>Jeane Bélanger</em> The party was crazy! <span> 🥴 </span> See you next time you're in Paris <span> 😘😘 </span> </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+
+      <tr class="post_row">
+        <td class="post_cell_img">
+          <img class="post_img" id="critic03" src="images/critic03.png" onclick="enlargeImg03()">
+          <table class="post_likes">
+            <td class="post_likes_cell"><button class="like" id="like03" type="button" onclick="change_likes03()"><i class="fa-regular fa-heart"></i></button></td>
+            <td class="post_likesnumber_cell"><p class="like_number" id="like_number03">12,143</p></td>
+            <td class="post_date_cell"><p class="post_date">28 December 2021</p></td>
+          </table>
+          <p class="post_text">Hope you had a great Christmas! If you're in Paris, don't miss out on the new installation by Jeane Bélanger. Fresh and direct!</p>
+        </td>
+        <td class="post_cell">
+          <button class="comments_title" id="comments_title03" type="button" onclick="toggle_comments03()">Show comments</button>
+          <table class="comments_all" id="comments_all03">
+            <tr class="comments_row">
+              <td class="comments_cell_img">
+                <img class="comments_img" src="images/comments07.png">
+              </td>
+              <td class="comments_cell">
+                <p class="comments_text"><em>Jeane Bélanger</em> Merci Marvin! See you for the New Years Eve <span> 😘 </span></p>
+              </td>
+            </tr>
+            <tr class="comments_row">
+              <td class="comments_cell_img">
+                <img class="comments_img" src="images/comments03.png">
+              </td>
+              <td class="comments_cell">
+                <p class="comments_text"><em>Tom Melin</em> Jeane rocks! <span> 🤘 </span> We've been on the same wavelenght lately Marvin</p>
+              </td>
+            </tr>
+            <tr class="comments_row">
+              <td class="comments_cell_img">
+                <img class="comments_img" src="images/comments04.png">
+              </td>
+              <td class="comments_cell">
+                <p class="comments_text"><em>Ferenjin</em> Sure, Jeane is great. Not very surprising, women know art, don't they? <span> ♀ </span><span> ✖ </span><span> 🎨 </span></p>
+              </td>
+            </tr>
+            <tr class="comments_row">
+              <td class="comments_cell_img">
+                <img class="comments_img" src="images/comments05.png">
+              </td>
+              <td class="comments_cell">
+                <p class="comments_text"><em>Julie Watch</em> I've seen her show in Vienna, not all of it was outstanding but there were some amazing pieces <span> 🤔 </span></p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr class="post_row">
+        <td class="post_cell_img">
+          <img class="post_img"  id="critic02" src="images/critic02.png" onclick="enlargeImg02()">
+          <table class="post_likes">
+            <td class="post_likes_cell"><button class="like" id="like02" type="button" onclick="change_likes02()"><i class="fa-regular fa-heart"></i></button></td>
+            <td class="post_likesnumber_cell"><p class="like_number" id="like_number02">7,568</p></td>
+            <td class="post_date_cell"><p class="post_date">17 December 2021</p></td>
+          </table>
+          <p class="post_text">Budapest is lovely at this time of year... I took a break from my Christmas shopping to visit one of my favourite museums in this part of the world.</p>
+        </td>
+        <td class="post_cell">
+          <button class="comments_title" id="comments_title02" type="button" onclick="toggle_comments02()">Show comments</button>
+          <table class="comments_all" id="comments_all02">
+            <tr class="comments_row">
+              <td class="comments_cell_img">
+                <img class="comments_img" src="images/comments02.png">
+              </td>
+              <td class="comments_cell">
+                <p class="comments_text"><em>Fodor Varga</em> Welcome to Hungary <span> 😉 </span></p>
+              </td>
+            </tr>
+            <tr class="comments_row">
+              <td class="comments_cell_img">
+                <img class="comments_img" src="images/comments04.png">
+              </td>
+              <td class="comments_cell">
+                <p class="comments_text"><em>Ferenjin</em> Too bad, we just missed each other. I was in Budapest yesterday. See you sometimes in the future I hope! <span> 🔮 </span><span> ✖ </span><span> 🙏 </span></p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr class="post_row">
+        <td class="post_cell_img">
+          <img class="post_img" id="critic01" src="images/critic01.png" onclick="enlargeImg01()">
+          <table class="post_likes">
+            <td class="post_likes_cell"><button class="like" id="like01" type="button" onclick="change_likes01()"><i class="fa-regular fa-heart"></i></button></td>
+            <td class="post_likesnumber_cell"><p class="like_number" id="like_number01">21,430</p></td>
+            <td class="post_date_cell"><p class="post_date">13 December 2021</p></td>
+          </table>
+          <p class="post_text">You can find mass-produced wallpapers that are more deserving of being put on the wall than the work of Jennifer Perks. I just got this one for my office. What do you think?</p>
+        </td>
+        <td class="post_cell">
+          <button class="comments_title" id="comments_title01" type="button" onclick="toggle_comments01()">Show comments</button>
+          <table class="comments_all" id="comments_all01">
+            <tr class="comments_row">
+              <td class="comments_cell_img">
+                <img class="comments_img" src="images/comments01.png">
+              </td>
+              <td class="comments_cell">
+                <p class="comments_text"><em>Marc Potin</em> Finally somebody is saying out loud how overrated Jennifer Perks is <span> 😝 </span></p>
+              </td>
+            </tr>
+            <tr class="comments_row">
+              <td class="comments_cell_img">
+                <img class="comments_img" src="images/comments05.png">
+              </td>
+              <td class="comments_cell">
+                <p class="comments_text"><em>Julie Watch</em> The wallpaper is great <span> 😍 </span> Perks is already yesterday's news <span> 🤷‍♀️ </span></p>
+              </td>
+            </tr>
+            <tr class="comments_row">
+              <td class="comments_cell_img">
+                <img class="comments_img" src="images/comments06.png">
+              </td>
+              <td class="comments_cell">
+                <p class="comments_text"><em>Rory Zane</em> You slayed it man! <span> 🤣 </span> I'm sick of these new pretentious artists <span> 🤢 </span></p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <div class="modal" id="modal_critic01">
+      <span class="close" id="close" onclick="close_modal01()">&times;</span>
+      <img class="modal_images" id="modal_imgcritic01" src="images/critic01.png">
+    </div>
+
+    <div class="modal" id="modal_critic02">
+      <span class="close" id="close" onclick="close_modal02()">&times;</span>
+      <img class="modal_images" id="modal_imgcritic02" src="images/critic02.png">
+    </div>
+
+    <div class="modal" id="modal_critic03">
+      <span class="close" id="close" onclick="close_modal03()">&times;</span>
+      <img class="modal_images" id="modal_imgcritic03" src="images/critic03.png">
+    </div>
+
+    <div class="modal" id="modal_critic04">
+      <span class="close" id="close" onclick="close_modal04()">&times;</span>
+      <img class="modal_images" id="modal_imgcritic04" src="images/critic04.png">
+    </div>
+
+    <div class="modal" id="modal_critic05">
+      <span class="close" id="close" onclick="close_modal05()">&times;</span>
+      <img class="modal_images" id="modal_imgcritic05" src="images/critic05.png">
+    </div>
+
+    <div class="modal" id="modal_critic06">
+      <span class="close" id="close" onclick="close_modal06()">&times;</span>
+      <img class="modal_images" id="modal_imgcritic06" src="images/critic06.png">
+    </div>
+
+    <div class="modal" id="modal_critic07">
+      <span class="close" id="close" onclick="close_modal07()">&times;</span>
+      <img class="modal_images" id="modal_imgcritic07" src="images/critic07.png">
+    </div>
+
+    <div class="modal" id="modal_critic08">
+      <span class="close" id="close" onclick="close_modal08()">&times;</span>
+      <img class="modal_images" id="modal_imgcritic08" src="images/critic08.png">
+    </div>
+
+    <div class="modal" id="modal_critic09">
+      <span class="close" id="close" onclick="close_modal09()">&times;</span>
+      <img class="modal_images" id="modal_imgcritic09" src="images/critic09.png">
+    </div>
+
+  </div>
+
+</body>
+</html>
