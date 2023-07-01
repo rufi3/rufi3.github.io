@@ -1,0 +1,227 @@
+13<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Requiem for a double</title>
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="preload" type="font/woff2" as="font" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@500&display=swap" rel="preload" type="font/woff2" as="font" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap" rel="preload" type="font/woff2" as="font" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap" rel="preload" type="font/woff2" as="font" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="preload" type="font/woff2" as="font" crossorigin>
+  <script type="text/javascript" src="javascript/script.js"></script>
+  <script type="text/javascript" src="javascript/script_requiem.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style_requiem.css">
+</head>
+
+<body>
+  <div class="navbar_container">
+    <div class="navbar" id="topnav">
+      <a id="logo" href="../index.html"><img class="logo" src="images/logo.png"></a>
+      <a id="home" href="../index.html">Home</a>
+      <a href="../games.html">Games</a>
+      <a href="../shop.html">Shop</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="topNavToggle();changeIcon()">
+        <i id="bars" class="fa fa-bars"></i>
+        <i id="close" class="fa fa-close"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="requiempuzzlemain">
+    <div class="requiempuzzle-title">
+      <h1>Requiem for a double</h1>
+    </div>
+  </div>
+  <div class="gamesmain">
+    <div class="gamesmain-box">
+      <h3>search the crime scene</h3>
+    </div>
+    <div class="gamesmain-text">
+      <p>Click on the button below to search the dressing room and find evidence. You can do this at any point in the game, and you can always return to it after you've already searched it.</p>
+      <a class="requiem_button" href="scene-requiem.html">Search the scene</a>
+    </div>
+    <div class="gamesmain-box">
+      <h3>solve the puzzles</h3>
+    </div>
+    <div class="gamesmain-text">
+      <p>Enter the solutions to the puzzles you found in the suspects' envelopes. If you get stuck, you can get help with hints.</p>
+    </div>
+    <div class="gamesmain-box">
+      <h3>the cd booklet puzzle (evidence 5)</h3>
+    </div>
+    <div class="gamesmain-text">
+      <input class="input_button" type="text" id="requiempuzzle5_text" onkeypress="return requiempuzzle_evidence5_press(event);" placeholder="enter solution">
+      <button class="ok_button" id="requiempuzzle_button5" onclick="requiempuzzle_evidence5()">OK</button>
+      <p id="requiempuzzle5_answer"></p>
+      <table class="reveal" id="evidence13">
+        <tr>
+          <td class="evidence_title"><h4 class="evidence_background">EVIDENCE 13</h4></td>
+        </tr>
+        <tr>
+          <td class="evidence_description"><h5>The drawing on the booklet represents a penguin.</h5></td>
+        </tr>
+      </table>
+      <button class="hint_button" id="requiemhint_button5_1" onclick="show_requiemhint_5_1()">HINT 1</button>
+      <p class="hints" id="requiemhint_answer5_1">Take a look at the booklet. The song list seems to be connected to another page of the booklet. Which one is it?</p>
+      <button class="hint_button" id="requiemhint_button5_2" onclick="show_requiemhint_5_2()">HINT 2</button>
+      <p class="hints" id="requiemhint_answer5_2">The page with nine animals has dashed lines dividing it into nine pieces. What does a dashed line usually indicate?</p>
+      <button class="hint_button" id="requiemhint_button5_3" onclick="show_requiemhint_5_3()">HINT 3</button>
+      <p class="hints" id="requiemhint_answer5_3">You should cut the paper with nine animals into nine pieces, each containing an animal.</p>
+      <button class="hint_button" id="requiemhint_button5_4" onclick="show_requiemhint_5_4()">HINT 4</button>
+      <p class="hints" id="requiemhint_answer5_4">The song list gives some sort of information about the animals. What kind of information is it?</p>
+      <button class="hint_button" id="requiemhint_button5_5" onclick="show_requiemhint_5_5()">HINT 5</button>
+      <p class="hints" id="requiemhint_answer5_5">Position and rotate the pieces following the instructions in the song list. Click <a id=booklet>here</a> to check the correct order and orientation of the animals.</p>
+      <button class="hint_button" id="requiemhint_button5_6" onclick="show_requiemhint_5_6()">HINT 6</button>
+      <p class="hints" id="requiemhint_answer5_6">What suggestion is given on the song list page?</p>
+      <button class="hint_button" id="requiemhint_button5_7" onclick="show_requiemhint_5_7()">HINT 7</button>
+      <p class="hints" id="requiemhint_answer5_7">What can you see if you turn over the reassembeled animals page?</p>
+      <button class="hint_button" id="requiemhint_button5_8" onclick="show_requiemhint_5_8()">SOLUTION</button>
+      <p class="hints" id="requiemhint_answer5_8">The solution to this puzzle is "penguin".</p>
+    </div>
+    <div class="gamesmain-box">
+      <h3>the anonymous letter puzzle (evidence 6)</h3>
+    </div>
+    <div class="gamesmain-text">
+      <input class="input_button" type="text" id="requiempuzzle6_text" onkeypress="return requiempuzzle_evidence6_press(event);" placeholder="enter solution">
+      <button class="ok_button" id="requiempuzzle_button6" onclick="requiempuzzle_evidence6()">OK</button>
+      <p id="requiempuzzle6_answer"></p>
+      <table class="reveal" id="evidence14">
+        <tr>
+          <td class="evidence_title"><h4 class="evidence_background">EVIDENCE 14</h4></td>
+        </tr>
+        <tr>
+          <td class="evidence_description"><h5>Somebody made it clear that Lava should expect something to happen on July 8th.</h5></td>
+        </tr>
+      </table>
+      <button class="hint_button" id="requiemhint_button6_1" onclick="show_requiemhint_6_1()">HINT 1</button>
+      <p class="hints" id="requiemhint_answer6_1">What song and video are mentioned in the letter? Where could you find this video?</p>
+      <button class="hint_button" id="requiemhint_button6_2" onclick="show_requiemhint_6_2()">HINT 2</button>
+      <p class="hints" id="requiemhint_answer6_2">Watch the mentioned video on YouTube. Now read the poem carefully.</p>
+      <button class="hint_button" id="requiemhint_button6_3" onclick="show_requiemhint_6_3()">HINT 3</button>
+      <p class="hints" id="requiemhint_answer6_3">Every verse of the poem speaks of a moment in the video. The video consists of parts that have something in common. How can you connect this to the anonymous letter?</p>
+      <button class="hint_button" id="requiemhint_button6_4" onclick="show_requiemhint_6_4()">HINT 4</button>
+      <p class="hints" id="requiemhint_answer6_4">What does the red line in the letter remind you of? How is this connected to the parts of the video singled out by the lyrics of the poem?</p>
+      <button class="hint_button" id="requiemhint_button6_5" onclick="show_requiemhint_6_5()">HINT 5</button>
+      <p class="hints" id="requiemhint_answer6_5">We are searching for different locations. For example, the verse 'Jump on a train if you think that it will get you in tune' is obviously speaking about the Berlin part of the video. However, it seems that we need a more precise description of the location.</p>
+      <button class="hint_button" id="requiemhint_button6_6" onclick="show_requiemhint_6_6()">HINT 6</button>
+      <p class="hints" id="requiemhint_answer6_6">We have to find the specific coordinates of certain locations. The whole part of the number matches the whole part of the coordinates of cities shown in the music video and corresponds to the verses of the poem. The decimal part should be found using the symbols drawn after the decimal separator.</p>
+      <button class="hint_button" id="requiemhint_button6_7" onclick="show_requiemhint_6_7()">HINT 7</button>
+      <p class="hints" id="requiemhint_answer6_7">Each symbol represents a number and can be found in each verse of the poem, encircling a single word. Therefore, the number we are searching for equals the order number of the corresponding word in the verse. For example, the coordinates of the location in Berlin are 52.5227,  13.3860.</p>
+      <button class="hint_button" id="requiemhint_button6_8" onclick="show_requiemhint_6_8()">HINT 8</button>
+      <p class="hints" id="requiemhint_answer6_8">What can you do with the coordinates once you've found them? Visit the locations, of course!</p>
+      <button class="hint_button" id="requiemhint_button6_9" onclick="show_requiemhint_6_9()">HINT 9</button>
+      <p class="hints" id="requiemhint_answer6_9">Go to Google Maps and input the coordinates in the search field. Make sure that the satellite view is checked. What can you make out of the satellite images of all of the locations?</p>
+      <button class="hint_button" id="requiemhint_button6_10" onclick="show_requiemhint_6_10()">SOLUTION</button>
+      <p class="hints" id="requiemhint_answer6_10">The solution to this puzzle is "July 8th".</p>
+    </div>
+    <div class="gamesmain-box">
+      <h3>Daisy's journal page puzzle (evidence 9)</h3>
+    </div>
+    <div class="gamesmain-text">
+      <input class="input_button" type="text" id="requiempuzzle9_text" onkeypress="return requiempuzzle_evidence9_press(event);" placeholder="enter solution">
+      <button class="ok_button" id="requiempuzzle_button9" onclick="requiempuzzle_evidence9()">OK</button>
+      <p id="requiempuzzle9_answer"></p>
+      <table class="reveal" id="evidence15">
+        <tr>
+          <td class="evidence_title"><h4 class="evidence_background">EVIDENCE 15</h4></td>
+        </tr>
+        <tr>
+          <td class="evidence_description"><h5>Daisy was obviously fangirling Lava.</h5></td>
+        </tr>
+      </table>
+      <button class="hint_button" id="requiemhint_button9_1" onclick="show_requiemhint_9_1()">HINT 1</button>
+      <p class="hints" id="requiemhint_answer9_1">Read the journal entry carefully. You will need another item to solve this puzzle.</p>
+      <button class="hint_button" id="requiemhint_button9_2" onclick="show_requiemhint_9_2()">HINT 2</button>
+      <p class="hints" id="requiemhint_answer9_2">Have you found the birthday card that Daisy writes about in the postscriptum? Daisy seems to like the concept of the card design.</p>
+      <button class="hint_button" id="requiemhint_button9_3" onclick="show_requiemhint_9_3()">HINT 3</button>
+      <p class="hints" id="requiemhint_answer9_3">Why would Daisy draw these random drawings in her journal? And how is it connected to the birthday card you found in Lava's belongings?</p>
+      <button class="hint_button" id="requiemhint_button9_4" onclick="show_requiemhint_9_4()">HINT 4</button>
+      <p class="hints" id="requiemhint_answer9_4">There are six drawings and six lines of text above them. Each drawing corresponds to one of the lines.</p>
+      <button class="hint_button" id="requiemhint_button9_5" onclick="show_requiemhint_9_5()">HINT 5</button>
+      <p class="hints" id="requiemhint_answer9_5">Find the subjects drawn in text lines and fold the paper, repeating the idea of the birthday card. In the first line, fold the paper to form the word 'sun' with the words 'still' and 'fun'. There is something pointing to a part of the solution.</p>
+      <button class="hint_button" id="requiemhint_button9_6" onclick="show_requiemhint_9_6()">HINT 6</button>
+      <p class="hints" id="requiemhint_answer9_6">When you fold the paper, the arrows point at the words that form the solution phrase.</p>
+      <button class="hint_button" id="requiemhint_button9_7" onclick="show_requiemhint_9_7()">SOLUTION</button>
+      <p class="hints" id="requiemhint_answer9_7">The solution to this puzzle is "I want to be like Lava".</p>
+    </div>
+    <div class="gamesmain-box">
+      <h3>the guitar case puzzle (evidence 10)</h3>
+    </div>
+    <div class="gamesmain-text">
+      <input class="input_button" type="text" id="requiempuzzle10_text" onkeypress="return requiempuzzle_evidence10_press(event);" placeholder="enter solution">
+      <button class="ok_button" id="requiempuzzle_button10" onclick="requiempuzzle_evidence10()">OK</button>
+      <p id="requiempuzzle10_answer"></p>
+      <table class="reveal" id="evidence16">
+        <tr>
+          <td class="evidence_title"><h4 class="evidence_background">EVIDENCE 16</h4></td>
+        </tr>
+        <tr>
+          <td class="evidence_description"><h5>The guitar belongs to Lisa Guin.</h5></td>
+        </tr>
+      </table>
+      <button class="hint_button" id="requiemhint_button10_1" onclick="show_requiemhint_10_1()">HINT 1</button>
+      <p class="hints" id="requiemhint_answer10_1">What do all of the stickers on the guitar case have in common?</p>
+      <button class="hint_button" id="requiemhint_button10_2" onclick="show_requiemhint_10_2()">HINT 2</button>
+      <p class="hints" id="requiemhint_answer10_2">All of the images on the stickers have a pointing element. What are they pointing to?</p>
+      <button class="hint_button" id="requiemhint_button10_3" onclick="show_requiemhint_10_3()">HINT 3</button>
+      <p class="hints" id="requiemhint_answer10_3">If you draw a straight line in the direction of each pointing element, it leads to a single letter oriented in the same direction. Where should you start?</p>
+      <button class="hint_button" id="requiemhint_button10_4" onclick="show_requiemhint_10_4()">HINT 4</button>
+      <p class="hints" id="requiemhint_answer10_4">It seems that the only information we can get from this puzzle is who the owner of the guitar is. Start with the 'property of' sticker and continue until you use all the stickers.</p>
+      <button class="hint_button" id="requiemhint_button10_5" onclick="show_requiemhint_10_5()">SOLUTION</button>
+      <p class="hints" id="requiemhint_answer10_5">The solution to this puzzle is "Lisa Guin".</p>
+    </div>
+    <div class="gamesmain-box">
+      <h3>the song demo puzzle (evidence 11)</h3>
+    </div>
+    <div class="gamesmain-text">
+      <input class="input_button" type="text" id="requiempuzzle11_text" onkeypress="return requiempuzzle_evidence11_press(event);" placeholder="enter solution">
+      <button class="ok_button" id="requiempuzzle_button11" onclick="requiempuzzle_evidence11()">OK</button>
+      <p id="requiempuzzle11_answer"></p>
+      <table class="reveal" id="evidence17">
+        <tr>
+          <td class="evidence_title"><h4 class="evidence_background">EVIDENCE 17</h4></td>
+        </tr>
+        <tr>
+          <td class="evidence_description"><h5>The date 2 May 2008 must be important to Lava.</h5></td>
+        </tr>
+      </table>
+      <button class="hint_button" id="requiemhint_button11_1" onclick="show_requiemhint_11_1()">HINT 1</button>
+      <p class="hints" id="requiemhint_answer11_1">Have you searched all the suspects? Have you talked to them about the demo?</p>
+      <button class="hint_button" id="requiemhint_button11_2" onclick="show_requiemhint_11_2()">HINT 2</button>
+      <p class="hints" id="requiemhint_answer11_2">Lava made the demo in May. Can you find some information somewhere about this process?</p>
+      <button class="hint_button" id="requiemhint_button11_3" onclick="show_requiemhint_11_3()">HINT 3</button>
+      <p class="hints" id="requiemhint_answer11_3">Lava writes about the song in her calendar. Is there something strange about these entries?</p>
+      <button class="hint_button" id="requiemhint_button11_4" onclick="show_requiemhint_11_4()">HINT 4</button>
+      <p class="hints" id="requiemhint_answer11_4">It looks as if the entries about the song are not written chronologically. Can you put them in a logical order?</p>
+      <button class="hint_button" id="requiemhint_button11_5" onclick="show_requiemhint_11_5()">HINT 5</button>
+      <p class="hints" id="requiemhint_answer11_5">Does the calendar remind of something?</p>
+      <button class="hint_button" id="requiemhint_button11_6" onclick="show_requiemhint_11_6()">HINT 6</button>
+      <p class="hints" id="requiemhint_answer11_6">The calendar has the same number of fields as the number of buttons in the midi controller with the programmed demo. How can you connect the calendar entries with the midi controller?</p>
+      <button class="hint_button" id="requiemhint_button11_7" onclick="show_requiemhint_11_7()">HINT 7</button>
+      <p class="hints" id="requiemhint_answer11_7">Press the buttons on the midi controller whose positions correspond to the entries about the song in the calendar in chronological order. What do you hear?</p>
+      <button class="hint_button" id="requiemhint_button11_8" onclick="show_requiemhint_11_8()">SOLUTION</button>
+      <p class="hints" id="requiemhint_answer11_8">The solution to this puzzle is "2nd of May 2008".</p>
+    </div>
+    <div class="gamesmain-box">
+      <h3>the final questionnaire</h3>
+    </div>
+    <div class="gamesmain-text">
+      <a class="requiem_button" href="finale-requiem.html">Solve the crime</a>
+    </div>
+  </div>
+</body>
+</html>
