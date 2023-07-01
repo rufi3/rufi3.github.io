@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Murder on Canvas</title>
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="preload" type="font/woff2" as="font" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@500&display=swap" rel="preload" type="font/woff2" as="font" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap" rel="preload" type="font/woff2" as="font" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap" rel="preload" type="font/woff2" as="font" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="preload" type="font/woff2" as="font" crossorigin>
+  <script type="text/javascript" src="javascript/script.js"></script>
+  <script type="text/javascript" src="javascript/script_moc.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style_moc.css">
+</head>
+
+<body>
+  <div class="navbar_container">
+    <div class="navbar" id="topnav">
+      <a id="logo" href="../index.html"><img class="logo" src="images/logo.png"></a>
+      <a id="home" href="../index.html">Home</a>
+      <a href="murderoncanvas.html">Games</a>
+      <a href="../shop.html">Shop</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="topNavToggle();changeIcon()">
+        <i id="bars" class="fa fa-bars"></i>
+        <i id="close" class="fa fa-close"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="mocpuzzlemain">
+    <div class="mocpuzzle-title">
+      <h1>Murder on canvas</h1>
+    </div>
+  </div>
+  <div class="gamesmain">
+    <div class="gamesmain-box">
+      <h3>solve the crime</h3>
+    </div>
+    <div class="gamesmain-text">
+      <p>You gather everyone in the living room to reveal your findings. After insinuating that everybody had a motive to kill Jennifer and giving them a bit of a fright, you get to the point.</p>
+    </div>
+    <div class="games-questionary">
+      <h4 class="finale_question">Who killed Jennifer?</h4>
+      <input class="finale_input" type="text" id="mocfinale1" placeholder="input here" autocomplete="off">
+      <h4 class="finale_question">What was the killer's motive?</h4>
+      <input class="finale_checkbox" type="radio" id="mocfinale2_option1" name="motive" value="Broken heart">
+      <label for="mocfinale2_option1">Broken heart</label><br>
+      <input class="finale_checkbox" type="radio" id="mocfinale2_option2" name="motive" value="Cheating">
+      <label for="mocfinale2_option2">Cheating</label><br>
+      <input class="finale_checkbox" type="radio" id="mocfinale2_option3" name="motive" value="Money">
+      <label for="mocfinale2_option3">Money</label><br>
+      <input class="finale_checkbox" type="radio" id="mocfinale2_option4" name="motive" value="Jealousy">
+      <label for="mocfinale2_option4">Jealousy</label><br>
+      <input class="finale_checkbox" type="radio" id="mocfinale2_option5" name="motive" value="Blackmail">
+      <label for="mocfinale2_option5">Blackmail</label><br>
+      <h4 class="finale_question">What was the killer's weapon?</h4>
+      <input class="finale_input" type="text" id="mocfinale3" placeholder="input here" autocomplete="off">
+      <input class="finale_submit" id="mocfinalesubmit" type="button" value="Submit" onclick="mocfinale_validate()">
+    </div>
+    <div class="gamesmain-text">
+      <p id="finale_answer1"></p>
+      <p id="finale_answer2"></p>
+      <p id="finale_answer3"></p>
+      <p id="finale_answer4"></p>
+      <a class="moc_button" id="summary" href="solution-moc.html">Click to read the solution</a>
+    </div>
+  </div>
+</body>
+</html>
