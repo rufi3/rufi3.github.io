@@ -6,54 +6,146 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Peculiar Pond / story-driven puzzle games and mysteries</title>
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@500&display=swap" rel="preload" type="font/woff2" as="font" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap" rel="preload" type="font/woff2" as="font" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap" rel="preload" type="font/woff2" as="font" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400;500;600;700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100..900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@500" rel="preload" type="font/woff2" as="font" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600" rel="preload" type="font/woff2" as="font" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500" rel="preload" type="font/woff2" as="font" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans" rel="preload" type="font/woff2" as="font" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400;500;600;700" rel="preload" type="font/woff2" as="font" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100..900" rel="preload" type="font/woff2" as="font" crossorigin>
   <script type="text/javascript" src="javascript/script.js"></script>
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <style>
+    #feature-photo-box-1 {
+      background-image: url("images/feature_1.jpg");
+    }
+    #feature-photo-box-2 {
+      background-image: url("images/feature_2.jpg");
+    }
+
+  @media only screen and (max-width: 600px) {
+    #feature-photo-box-mobile-1 {
+      background-image: url("images/feature_1.jpg");
+    }
+    #feature-photo-box-mobile-2 {
+      background-image: url("images/feature_2.jpg");
+    }
+  }
+  </style>
+  <meta property="og:image" alt="Peculiar Pond" content="https://www.peculiarpond.com/images/pp_og.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://peculiarpond.com/" />
+  <meta property="og:title" content="Peculiar Pond / story-driven puzzle games and mysteries" />
+  <meta property="og:description" content="If you enjoy escape room style puzzles and a good plot, dive into our pond and discover all of its secrets!" />
 </head>
 
 <body>
-  <div class="navbar_container">
+
+  <header class="navbar_container" id="index_header">
     <div class="navbar" id="topnav">
-      <a id="logo" href="index.html"><img class="logo" src="images/logo.png"></a>
-      <a id="home" href="index.html">Home</a>
-      <a href="requiem/requiem.html">Games</a>
-      <a href="shop.html">Shop</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a id="logo" href="https://www.peculiarpond.com"><img class="logo" alt="Peculiar Pond logo" src="images/logo.png"></a>
+      <a id="home" href="https://www.peculiarpond.com">Home</a>
+      <a href="games">Games</a>
+      <a href="https://www.etsy.com/shop/peculiarpondgames" target="_blank">Shop</a>
+      <a href="about">About</a>
+      <a href="contact">Contact</a>
+      <a href="">HR</a>
       <a href="javascript:void(0);" class="icon" onclick="topNavToggle();changeIcon()">
         <i id="bars" class="fa fa-bars"></i>
         <i id="close" class="fa fa-close"></i>
       </a>
     </div>
-  </div>
+  </header>
 
   <div class="heromain">
+    <img src="" class="heroimage" id="heroimage">
+    <script>document.getElementById("heroimage").src="images/hero.gif?a="+Math.random()</script>
     <div class="hero-title">
-      <h1>Story-driven puzzle games and mysteries</h1>
+      <h1>story-driven puzzle games and mysteries</h1>
     </div>
   </div>
   <div class="main">
-    <div class="main-box">
-      <h3>about us</h3>
+    <div class="main-intro">
+      <div class="circle"></div>
+      <h4>We create narrative puzzle games that put YOU at the centre of the story. If you enjoy escape room style puzzles and a good plot, dive into our pond and discover all of its mysteries!</h4>
+      <a class="intro-game-button" href="games">Our games</a>
     </div>
-    <div class="main-text">
-      <p>We create narrative tabletop adventures that put you in the center of the story. To unravel the mystery you will have to explore all of the material, communicate to other characters and solve a number of puzzles.</p>
+    <div class="feature-games-1">
+      <div class="feature-box">
+        <h2>Zagreb is out of tune</h2>
+      </div>  
+      <div class="main-text">
+        <h5>An outdoor escape game in the streets of Zagreb</h5>
+      </div>
     </div>
-    <div class="main-box">
-      <h3>our games</h3>
-    </div>
-    <div class="main-text">
-      <a class="game_button" href="murderoncanvas/murderoncanvas.html">Murder on canvas</a>
+    <div class="feature-games-2"> 
+      <div class="feature-box">
+        <h2>Vanja Petelin cases</h2>
+      </div> 
+      <div class="main-text">
+        <h5>Put yourself in the shoes of PD Vanja Petelin in these puzzle-solving whodunit combos</h5>
+        <table class="feature-table-comp">
+          <tr>
+            <td class="feature-table-text-cell"><h6>search the crime scene</h6></td>
+            <td class="feature-table-empty-cell"></td>
+            <td class="feature-table-text-cell"><h6>solve the puzzles</h6></td>
+            <td class="feature-table-empty-cell"></td>
+            <td class="feature-table-text-cell"><h6>talk to the suspects</h6></td>
+            <td class="feature-table-empty-cell"></td>
+            <td class="feature-table-text-cell"><h6>find the culprit</h6></td>
+          </tr>
+        </table>
+        <table class="feature-table-mobile">
+          <tr>
+            <td><h6>search the crime scene</h6></td>
+            <td><h6>solve the puzzles</h6></td>
+          </tr>
+          <tr>
+            <td><h6>talk to the suspects</h6></td>
+            <td><h6>find the culprit</h6></td>
+          </tr>
+        </table>
+        <p class="feature-text-p1">Unfold the crime by finding hard evidence and talking to suspects about it. Find out what they are hiding... Did they have a motive? And an opportunity?</p>
+      </div>
+      <div id="feature-photo-box-1" class="feature-photo-box">
+      </div>   
+      <div class="main-text">
+        <h5>Divide the tasks between different players and share your findings with each other in our nonlinear cooperative games</h5>
+      </div>
+      <div id="feature-photo-box-2" class="feature-photo-box">
+      </div> 
+      <div class="main-text">
+        <h5 class="feature-text-h51">Solve the puzzles to find meaningful solutions that will bring you closer to unravelling the murder mystery. Prepare yourself for some plot twists...</h5>
+        <p class="feature-text-p2">Does a story about a rising painter murdered in her secluded studio in the woods by a member of an uninvited group pique your interest? Or do you prefer to dive into a tragedy of error where a woman gets mistaken for a famous pop star with fatal consequences? Or try both and save on shipping charges.</p>
+        <a class="game_button" href="murderoncanvas/murderoncanvas">Check out Murder On Canvas</a>
+        <a class="game_button" href="requiem/requiem">Check out Requiem For A Double</a>
+      </div>
     </div>
   </div>
+
+  <footer class="footer">
+    <table class="footer-table">
+      <tr><td><a href="https://www.peculiarpond.com"><img class="footer-logo" src="images/logo.png"></a></td></tr>
+      <tr><td><p class="footer-text">&copy 2023 POMA Studio. All Rights Reserved.</b></p></td></tr>
+      <tr><td><p class="footer-text">Contact us: <em>info@peculiarpond.com</em></p></td></tr>
+      <tr>
+        <td>
+          <a href="https://www.facebook.com/peculiarpond" target="_blank"><i class="social fa-brands fa-square-facebook"></i></a>
+          <a href="https://www.instagram.com/peculiarpond" target="_blank"><i class="social fa-brands fa-square-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCPStOy7pt9Gftu4fTWLt6Ig" target="_blank"><i class="social fa-brands fa-square-youtube"></i></a>
+        </td>
+      </tr>
+    </table>
+  </footer>
+
 </body>
 </html>
