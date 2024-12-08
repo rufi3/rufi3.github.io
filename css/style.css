@@ -32,6 +32,11 @@ body {
 	border-bottom: 3px solid black;
 }
 
+img[src=""],
+img:not([src]) {
+  visibility: hidden;
+}
+
 #index_header {
 	animation: show 1s forwards;
 	height: 0px;
