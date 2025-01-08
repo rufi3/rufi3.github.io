@@ -1,102 +1,123 @@
 <!doctype html>
 
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Peculiar Pond / story-driven puzzle games and mysteries</title>
+  <link rel="alternate" hreflang="en" href="https://www.peculiarpond.com">
+  <link rel="alternate" hreflang="hr" href="https://www.peculiarpond.com/hr/pocetna">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@500" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400;500;600;700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100..900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@500" rel="preload" type="font/woff2" as="font" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600" rel="preload" type="font/woff2" as="font" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500" rel="preload" type="font/woff2" as="font" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans" rel="preload" type="font/woff2" as="font" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400;500;600;700" rel="preload" type="font/woff2" as="font" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100..900" rel="preload" type="font/woff2" as="font" crossorigin>
   <script type="text/javascript" src="javascript/script.js"></script>
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <style>
     #feature-photo-box-1 {
-      background-image: url("images/feature_1.jpg");
+      background-image: url("images/murderoncanvas_1.jpg");
     }
     #feature-photo-box-2 {
-      background-image: url("images/feature_2.jpg");
+      background-image: url("images/requiem_2.jpg");
     }
-
-  @media only screen and (max-width: 600px) {
-    #feature-photo-box-mobile-1 {
-      background-image: url("images/feature_1.jpg");
+    #feature-photo-box-3 {
+      background-image: url("images/zagreb_1.jpg");
     }
-    #feature-photo-box-mobile-2 {
-      background-image: url("images/feature_2.jpg");
+    #feature-photo-box-4 {
+      background-image: url("images/zagreb_2.jpg");
     }
-  }
   </style>
   <meta property="og:image" alt="Peculiar Pond" content="https://www.peculiarpond.com/images/pp_og.jpg" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://peculiarpond.com/" />
-  <meta property="og:title" content="Peculiar Pond / story-driven puzzle games and mysteries" />
+  <meta property="og:title" content="Peculiar Pond / story-driven escape room games and mysteries" />
   <meta property="og:description" content="If you enjoy escape room style puzzles and a good plot, dive into our pond and discover all of its secrets!" />
 </head>
 
 <body>
 
-  <header class="navbar_container" id="index_header">
+  <header class="navbar_container">
     <div class="navbar" id="topnav">
       <a id="logo" href="https://www.peculiarpond.com"><img class="logo" alt="Peculiar Pond logo" src="images/logo.png"></a>
       <a id="home" href="https://www.peculiarpond.com">Home</a>
-      <a href="games">Games</a>
+      <a href="en/games">Games</a>
       <a href="https://www.etsy.com/shop/peculiarpondgames" target="_blank">Shop</a>
-      <a href="about">About</a>
-      <a href="contact">Contact</a>
-      <a href="">HR</a>
-      <a href="javascript:void(0);" class="icon" onclick="topNavToggle();changeIcon()">
+      <a href="en/about">About</a>
+      <a href="en/contact">Contact</a>
+      <a href="hr/pocetna"><object data="images/hrv.svg" class="flag"></object>HR</a>
+      <a href="javascript:void(0);" class="icon" onclick="topNavToggle()">
         <i id="bars" class="fa fa-bars"></i>
         <i id="close" class="fa fa-close"></i>
       </a>
     </div>
   </header>
 
-  <div class="heromain">
-    <object data="" type="image/gif" class="heroimage" id="heroimage"></object>
-      <script>document.getElementById("heroimage").data="images/hero.gif?a="+Math.random()</script>
+  <div class="hero-main">
+    <object data="" type="image/gif" class="hero-image" id="hero-image"></object>
+      <script>document.getElementById("hero-image").data="images/peculiarpond.gif?a="+Math.random()</script>
     <div class="hero-title">
-      <h1>story-driven puzzle games and mysteries</h1>
+      <h1>story-driven escape room games and mysteries</h1>
     </div>
   </div>
   <div class="main">
     <div class="main-intro">
       <div class="circle"></div>
       <h4>We create narrative puzzle games that put YOU at the centre of the story. If you enjoy escape room style puzzles and a good plot, dive into our pond and discover all of its mysteries!</h4>
-      <a class="intro-game-button" href="games">Our games</a>
+      <a class="intro-game-button" href="en/games">Our games</a>
     </div>
     <div class="feature-games-1">
       <div class="feature-box">
         <h2>Zagreb is out of tune</h2>
       </div>  
       <div class="main-text">
-        <h5>An outdoor escape game in the streets of Zagreb</h5>
+        <h5>An outdoor escape game in the streets of Zagreb</h5>    
+        <table class="feature-table-comp">
+          <tr>
+            <td class="feature-table-text-cell-comp"><h6>download the app</h6></td>
+            <td class="feature-table-empty-cell-comp"></td>
+            <td class="feature-table-text-cell-comp"><h6>visit different locations</h6></td>
+            <td class="feature-table-empty-cell-comp"></td>
+            <td class="feature-table-text-cell-comp"><h6>solve the puzzles</h6></td>
+            <td class="feature-table-empty-cell-comp"></td>
+            <td class="feature-table-text-cell-comp"><h6>immerse yourself into the story</h6></td>
+          </tr>
+        </table>
+        <table class="feature-table-mobile">
+          <tr>
+            <td class="feature-table-text-cell-mobile"><h6>download the app</h6></td>
+            <td class="feature-table-empty-cell-mobile"></td>
+            <td class="feature-table-text-cell-mobile"><h6>visit different locations</h6></td>
+          </tr>
+          <tr>
+            <td class="feature-table-bigempty-cell-mobile"></td>
+            <td class="feature-table-empty-cell-mobile"></td>
+            <td class="feature-table-bigempty-cell-mobile"></td>
+          </tr>
+          <tr>
+            <td class="feature-table-text-cell-mobile"><h6>solve the puzzles</h6></td>
+            <td class="feature-table-empty-cell-mobile"></td>
+            <td class="feature-table-text-cell-mobile"><h6>immerse yourself into the story</h6></td>
+          </tr>
+        </table>
+        <p class="feature-text-p1">Travel into the beginning of the last century and embark on a wacky adventure with real Croatian historical figures!</p>
+      </div>    
+      <div id="feature-photo-box-3" class="feature-photo-box">
       </div>
-      <table class="feature-table-comp">
-        <tr>
-          <td class="feature-table-text-cell"><h6>download the app</h6></td>
-          <td class="feature-table-empty-cell"></td>
-          <td class="feature-table-text-cell"><h6>solve the puzzles</h6></td>
-          <td class="feature-table-empty-cell"></td>
-          <td class="feature-table-text-cell"><h6>talk to the suspects</h6></td>
-          <td class="feature-table-empty-cell"></td>
-          <td class="feature-table-text-cell"><h6>find the culprit</h6></td>
-        </tr>
-      </table>
+      <div class="main-text">
+        <h5>Enjoy our carefully crafted puzzles in real historic locations and learn some lesser-known fun facts about Zagreb</h5>
+      </div>
+      <div id="feature-photo-box-4" class="feature-photo-box">
+      </div> 
+      <div class="main-text">
+        <h5 class="feature-text-h51">Be the heroes and save Zagreb from an unusual trouble it has found itself in</h5>
+        <p class="feature-text-p2">All you need to play the game is your phone and the city that surrounds you. Take a walk and look around while following the goofy narrative involving a famous Croatian inventor, journalist, opera singer, architect, and more.</p>
+        <a class="game-button" href="en/zagreb">Check out Zagreb is out of tune</a>
+      </div>
     </div>
     <div class="feature-games-2"> 
       <div class="feature-box">
@@ -106,23 +127,30 @@
         <h5>Put yourself in the shoes of PD Vanja Petelin in these puzzle-solving whodunit combos</h5>
         <table class="feature-table-comp">
           <tr>
-            <td class="feature-table-text-cell"><h6>search the crime scene</h6></td>
-            <td class="feature-table-empty-cell"></td>
-            <td class="feature-table-text-cell"><h6>solve the puzzles</h6></td>
-            <td class="feature-table-empty-cell"></td>
-            <td class="feature-table-text-cell"><h6>talk to the suspects</h6></td>
-            <td class="feature-table-empty-cell"></td>
-            <td class="feature-table-text-cell"><h6>find the culprit</h6></td>
+            <td class="feature-table-text-cell-comp"><h6>search the crime scene</h6></td>
+            <td class="feature-table-empty-cell-comp"></td>
+            <td class="feature-table-text-cell-comp"><h6>solve the puzzles</h6></td>
+            <td class="feature-table-empty-cell-comp"></td>
+            <td class="feature-table-text-cell-comp"><h6>talk to the suspects</h6></td>
+            <td class="feature-table-empty-cell-comp"></td>
+            <td class="feature-table-text-cell-comp"><h6>find the culprit</h6></td>
           </tr>
         </table>
         <table class="feature-table-mobile">
           <tr>
-            <td><h6>search the crime scene</h6></td>
-            <td><h6>solve the puzzles</h6></td>
+            <td class="feature-table-text-cell-mobile"><h6>search the crime scene</h6></td>
+            <td class="feature-table-empty-cell-mobile"></td>
+            <td class="feature-table-text-cell-mobile"><h6>solve the puzzles</h6></td>
           </tr>
           <tr>
-            <td><h6>talk to the suspects</h6></td>
-            <td><h6>find the culprit</h6></td>
+            <td class="feature-table-bigempty-cell-mobile"></td>
+            <td class="feature-table-empty-cell-mobile"></td>
+            <td class="feature-table-bigempty-cell-mobile"></td>
+          </tr>
+          <tr>
+            <td class="feature-table-text-cell-mobile"><h6>talk to the suspects</h6></td>
+            <td class="feature-table-empty-cell-mobile"></td>
+            <td class="feature-table-text-cell-mobile"><h6>find the culprit</h6></td>
           </tr>
         </table>
         <p class="feature-text-p1">Unfold the crime by finding hard evidence and talking to suspects about it. Find out what they are hiding... Did they have a motive? And an opportunity?</p>
@@ -137,8 +165,8 @@
       <div class="main-text">
         <h5 class="feature-text-h51">Solve the puzzles to find meaningful solutions that will bring you closer to unravelling the murder mystery. Prepare yourself for some plot twists...</h5>
         <p class="feature-text-p2">Does a story about a rising painter murdered in her secluded studio in the woods by a member of an uninvited group pique your interest? Or do you prefer to dive into a tragedy of error where a woman gets mistaken for a famous pop star with fatal consequences? Or try both and save on shipping charges.</p>
-        <a class="game_button" href="murderoncanvas/murderoncanvas">Check out Murder On Canvas</a>
-        <a class="game_button" href="requiem/requiem">Check out Requiem For A Double</a>
+        <a class="game-button" href="murderoncanvas/murderoncanvas">Check out Murder On Canvas</a>
+        <a class="game-button" href="requiem/requiem">Check out Requiem For A Double</a>
       </div>
     </div>
   </div>
@@ -146,8 +174,11 @@
   <footer class="footer">
     <table class="footer-table">
       <tr><td><a href="https://www.peculiarpond.com"><img class="footer-logo" src="images/logo.png"></a></td></tr>
-      <tr><td><p class="footer-text">&copy 2023 POMA Studio. All Rights Reserved.</b></p></td></tr>
-      <tr><td><p class="footer-text">Contact us: <em>info@peculiarpond.com</em></p></td></tr>
+      <tr><td class="footer-table-textcell"><p class="footer-text" id="first-footer-text">POMA Studio</b></p></td></tr>
+      <tr><td class="footer-table-textcell"><p class="footer-text">sole proprietorship for services, manufacturing, and commerce</b></p></td></tr>
+      <tr><td class="footer-table-textcell"><p class="footer-text">owner Jelena Rajčević</b></p></td></tr>
+      <tr><td class="footer-table-textcell"><p class="footer-text">Vodovodna 9, 10000 Zagreb, Croatia</b></p></td></tr>
+      <tr><td class="footer-table-textcell"><p class="footer-text">Contact us: <em>info@peculiarpond.com</em></p></td></tr>
       <tr>
         <td>
           <a href="https://www.facebook.com/peculiarpond" target="_blank"><i class="social fa-brands fa-square-facebook"></i></a>
