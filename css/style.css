@@ -81,7 +81,7 @@ body {
 	position: relative;
 	top: 120px;
  	width: 100%;
-  	height: calc(100svh - 120px);
+  	height: calc(100dvh - 120px);
 	background-position: center;
 	background-color: #24C0E1;
 }
