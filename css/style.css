@@ -88,21 +88,22 @@ body {
 
 .hero-image {
 	position: absolute;
-	left: 100px;
-	bottom: 200px;
+	left: 50%;
+	top: 120%;
+	transform: translate(-50%,-50%);
 	width: 1000px;
 	height: auto;
-	display: none;
-	/*animation: visibilityHero 1s forwards;
-	animation-delay: 3500ms;*/
+	display: block;
+	animation: visibilityHero 1s forwards;
+	animation-delay: 3000ms;
 }
 
 @keyframes visibilityHero {
 	0% {
-		bottom: -500px;
+		top: 120%;
 	}
 	100% {
-		bottom: 200px;
+		top: 50%;
 	}
 }
 
@@ -112,14 +113,29 @@ body {
 	height: 350px;
 }
 
-#water-drop-1 {
-	top: 15%;
+#water-drop-a {
+	top: -10%;
 	left: 20%;
 }
 
-#water-drop-2 {
+#water-drop-b {
 	bottom: 10%;
-	right: 15%;
+	right: -5%;
+}
+
+#water-drop-c {
+	bottom: -20%;
+	left: 40%;
+}
+
+#water-drop-d {
+	bottom: 2%;
+	left: -2%;
+}
+
+#water-drop-e {
+	top: 5%;
+	right: 20%;
 }
 
 .drop-anim-blue-full {
@@ -161,133 +177,328 @@ body {
 	border-radius: 20px;
 }
 
-#drop-anim-1 {
+#drop-anim-a1 {
 	animation: dropGrow 2s ease-in-out forwards;
 }
 
-#drop-anim-2 {
+#drop-anim-a2 {
 	animation: dropGrow 2s ease-in-out forwards;
 	animation-delay: 100ms;
 }
 
-#drop-anim-3 {
+#drop-anim-a3 {
 	animation: dropGrow 2s ease-in-out forwards;
 	animation-delay: 200ms;
 }
 
-#drop-anim-4 {
+#drop-anim-a4 {
 	animation: dropGrow 2s ease-in-out forwards;
 	animation-delay: 300ms;
 }
 
-#drop-anim-5 {
+#drop-anim-a5 {
 	animation: dropGrow 2s ease-in-out forwards;
 	animation-delay: 400ms;
 }
 
-#drop-anim-6 {
+#drop-anim-a6 {
 	animation: dropGrow 2s ease-in-out forwards;
 	animation-delay: 500ms;
 }
 
-#drop-anim-7 {
+#drop-anim-a7 {
 	animation: dropGrow 2s ease-in-out forwards;
 	animation-delay: 600ms;
 }
 
-#drop-anim-8 {
+#drop-anim-a8 {
 	animation: dropGrow 2s ease-in-out forwards;
 	animation-delay: 700ms;
 }
 
-#drop-anim-9 {
+#drop-anim-a9 {
 	animation: dropGrow 2s ease-in-out forwards;
 	animation-delay: 800ms;
 }
 
-#drop-anim-10 {
+#drop-anim-a10 {
 	animation: dropGrow 2s ease-in-out forwards;
 	animation-delay: 900ms;
 }
 
-#drop-anim-11 {
+#drop-anim-a11 {
 	animation: dropGrow 2s ease-in-out forwards;
 	animation-delay: 1000ms;
 }
 
-#drop-anim-12 {
+#drop-anim-a12 {
 	animation: dropGrow 2s ease-in-out forwards;
 	animation-delay: 1100ms;
 }
 
-#drop-anim-blue-full-1 {
+#drop-anim-blue-full-a {
 	animation: dropGrowBlue 2s ease-in-out forwards;
 	animation-delay: 1200ms;
 }
 
-#drop-anim-13 {
+#drop-anim-b1 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 300ms;
+}
+
+#drop-anim-b2 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 400ms;
+}
+
+#drop-anim-b3 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 500ms;
+}
+
+#drop-anim-b4 {
 	animation: dropGrow 2s ease-in-out forwards;
 	animation-delay: 600ms;
 }
 
-#drop-anim-14 {
+#drop-anim-b5 {
 	animation: dropGrow 2s ease-in-out forwards;
 	animation-delay: 700ms;
 }
 
-#drop-anim-15 {
+#drop-anim-b6 {
 	animation: dropGrow 2s ease-in-out forwards;
 	animation-delay: 800ms;
 }
 
-#drop-anim-16 {
+#drop-anim-b7 {
 	animation: dropGrow 2s ease-in-out forwards;
 	animation-delay: 900ms;
 }
 
-#drop-anim-17 {
+#drop-anim-b8 {
 	animation: dropGrow 2s ease-in-out forwards;
 	animation-delay: 1000ms;
 }
 
-#drop-anim-18 {
+#drop-anim-b9 {
 	animation: dropGrow 2s ease-in-out forwards;
 	animation-delay: 1100ms;
 }
 
-#drop-anim-19 {
+#drop-anim-b10 {
 	animation: dropGrow 2s ease-in-out forwards;
 	animation-delay: 1200ms;
 }
 
-#drop-anim-20 {
+#drop-anim-b11 {
 	animation: dropGrow 2s ease-in-out forwards;
 	animation-delay: 1300ms;
 }
 
-#drop-anim-21 {
+#drop-anim-b12 {
 	animation: dropGrow 2s ease-in-out forwards;
 	animation-delay: 1400ms;
 }
 
-#drop-anim-22 {
+#drop-anim-blue-full-b {
+	animation: dropGrowBlue 2s ease-in-out forwards;
+	animation-delay: 1500ms;
+}
+
+#drop-anim-c1 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 600ms;
+}
+
+#drop-anim-c2 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 700ms;
+}
+
+#drop-anim-c3 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 800ms;
+}
+
+#drop-anim-c4 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 900ms;
+}
+
+#drop-anim-c5 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 1000ms;
+}
+
+#drop-anim-c6 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 1100ms;
+}
+
+#drop-anim-c7 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 1200ms;
+}
+
+#drop-anim-c8 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 1300ms;
+}
+
+#drop-anim-c9 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 1400ms;
+}
+
+#drop-anim-c10 {
 	animation: dropGrow 2s ease-in-out forwards;
 	animation-delay: 1500ms;
 }
 
-#drop-anim-23 {
+#drop-anim-c11 {
 	animation: dropGrow 2s ease-in-out forwards;
 	animation-delay: 1600ms;
 }
 
-#drop-anim-24 {
+#drop-anim-c12 {
 	animation: dropGrow 2s ease-in-out forwards;
 	animation-delay: 1700ms;
 }
 
-#drop-anim-blue-full-2 {
+#drop-anim-blue-full-c {
 	animation: dropGrowBlue 2s ease-in-out forwards;
 	animation-delay: 1800ms;
+}
+
+#drop-anim-d1 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 900ms;
+}
+
+#drop-anim-d2 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 1000ms;
+}
+
+#drop-anim-d3 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 1100ms;
+}
+
+#drop-anim-d4 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 1200ms;
+}
+
+#drop-anim-d5 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 1300ms;
+}
+
+#drop-anim-d6 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 1400ms;
+}
+
+#drop-anim-d7 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 1500ms;
+}
+
+#drop-anim-d8 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 1600ms;
+}
+
+#drop-anim-d9 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 1700ms;
+}
+
+#drop-anim-d10 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 1800ms;
+}
+
+#drop-anim-d11 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 1900ms;
+}
+
+#drop-anim-d12 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 2000ms;
+}
+
+#drop-anim-blue-full-d {
+	animation: dropGrowBlue 2s ease-in-out forwards;
+	animation-delay: 2100ms;
+}
+
+#drop-anim-e1 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 1200ms;
+}
+
+#drop-anim-e2 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 1300ms;
+}
+
+#drop-anim-e3 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 1400ms;
+}
+
+#drop-anim-e4 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 1500ms;
+}
+
+#drop-anim-e5 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 1600ms;
+}
+
+#drop-anim-e6 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 1700ms;
+}
+
+#drop-anim-e7 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 1800ms;
+}
+
+#drop-anim-e8 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 1900ms;
+}
+
+#drop-anim-e9 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 2000ms;
+}
+
+#drop-anim-e10 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 2100ms;
+}
+
+#drop-anim-e11 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 2200ms;
+}
+
+#drop-anim-e12 {
+	animation: dropGrow 2s ease-in-out forwards;
+	animation-delay: 2300ms;
+}
+
+#drop-anim-blue-full-e {
+	animation: dropGrowBlue 2s ease-in-out forwards;
+	animation-delay: 2400ms;
 }
 
 @keyframes dropGrow {
@@ -316,55 +527,16 @@ body {
 	}
 }
 
-@keyframes dropGrow2 {
-	0% {
-		width: 0px;
-		height: 0px;
-		border-radius: 20px;
-	}
-	100% {
-		width: 570px;
-		height: 570px;
-		border-radius: 285px;
-	}
-}
-
-@keyframes dropGrow3 {
-	0% {
-		width: 0px;
-		height: 0px;
-		border-radius: 20px;
-	}
-	100% {
-		width: 540px;
-		height: 540px;
-		border-radius: 270px;
-	}
-}
-
-@keyframes dropGrow4 {
-	0% {
-		width: 0px;
-		height: 0px;
-		border-radius: 20px;
-	}
-	100% {
-		width: 510px;
-		height: 510px;
-		border-radius: 255px;
-	}
-}
-
 .hero-title {
 	display: block;
   	position: absolute;
-	top: -40%;
+	bottom: 120%;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
 	z-index: 1;
 	animation: visibilityTitle 1s forwards;
-	animation-delay: 5500ms;
+	animation-delay: 3500ms;
 }
 
 @keyframes visibilityTitle {
@@ -372,7 +544,7 @@ body {
 		top: -40%;
 	}
 	100% {
-		top: 70%;
+		bottom: 15%;
 	}
 }
 
@@ -382,6 +554,7 @@ body {
 	width: 100%;
 	height: 20px;
 	background-color: #dfdfdf;
+	border-top: 3px solid black;
 	z-index: 1;
 }
 
@@ -706,56 +879,40 @@ h1 {
 }
 
 .main {
+	position: relative;
+	margin: 0 0 30px 0;
 	padding-bottom: 30px;
 	min-height: calc(100vh - 200px);
 	background-color: #dfdfdf;
+	z-index: 1;	
 }
 
 .main-intro {
-	position: relative;
- 	width: 100%;
-	height: 1000px;
-	background-image: url("../images/spiral.png");
-	background-color: #dfdfdf;
-	background-size: cover;
-	background-position: center;
-}
-
-.circle {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-50%);
-	width: 900px;
-	height: 900px;
+	margin: 0 auto;
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	background-color: #262626;
-	border-radius: 450px;
 }
 
-h4 {
-	position: absolute;
-	left: 50%;
-	top: 300px;
-	transform: translate(-50%,0);
-	width: 700px;
+
+h1.main-intro-text {
 	color: #dfdfdf;
 	text-align: center;
+	margin: 0 auto;
+	width: 900px;
 	padding: 30px;
 	line-height: 1.3;
 	letter-spacing: 1px;
 	font-family: "Libre Franklin", sans-serif;
-	font-size: 220%;
+	font-size: 200%;
 	font-weight: 600;
-	z-index: 1;
 }
 
 .intro-game-button {
-	position: absolute;
-	left: 50%;
-	top: 700px;
-	transform: translate(-50%,0);
-	width: 100%;
-	box-sizing: border-box;
+	display: block;
+	margin: 0 auto 30px auto;
+	width: 900px;
 	text-transform: uppercase;
 	font-family: "Libre Franklin", sans-serif;
   	text-decoration: none;
@@ -764,8 +921,9 @@ h4 {
 	color: #dfdfdf;
 	text-align: center;
 	padding: 15px 0 18px 0;
-	border-top: 3px solid #dfdfdf;
-	border-bottom: 3px solid #dfdfdf;
+	border: 3px solid #dfdfdf;
+	background-color: #262626;
+	border-radius: 25px;
 	z-index: 1;
 }
 
@@ -1545,16 +1703,6 @@ h1 {
 	font-size: 270%;
 }
 
-.main-intro {
-	height: 700px;
-}
-
-.circle {
-	width: 600px;
-	height: 600px;
-	border-radius: 300px;
-}
-
 h4 {
 	top: 200px;
 	width: 450px;
@@ -1562,10 +1710,6 @@ h4 {
 	font-size: 165%;
 }
 
-.intro-game-button {
-	top: 500px;
-
-}
 
 }
 
@@ -1632,7 +1776,6 @@ h1 {
 
 .hero-image {
 	width: calc(100% - 200px);
-	height: auto;
 }
 
 #section-title-small {
@@ -1698,10 +1841,33 @@ h1 {
 }
 
 .hero-image {
-	width: calc(100% - 30px);
+	width: calc(100% - 40px);
 	height: auto;
-	margin-left: 15px;
-	margin-right: 15px;
+}
+
+#water-drop-a {
+	top: -10%;
+	left: 10%;
+}
+
+#water-drop-b {
+	bottom: 10%;
+	right: -10%;
+}
+
+#water-drop-c {
+	bottom: -20%;
+	left: 30%;
+}
+
+#water-drop-d {
+	bottom: 2%;
+	left: -12%;
+}
+
+#water-drop-e {
+	top: 5%;
+	right: 10%;
 }
 
 h1 {
@@ -2055,6 +2221,31 @@ html {
 	scrollbar-width: none;  /* Firefox */
 }
 
+#water-drop-a {
+	top: -10%;
+	left: 5%;
+}
+
+#water-drop-b {
+	bottom: 10%;
+	right: -15%;
+}
+
+#water-drop-c {
+	bottom: -20%;
+	left: 25%;
+}
+
+#water-drop-d {
+	bottom: 2%;
+	left: -17%;
+}
+
+#water-drop-e {
+	top: 5%;
+	right: 5%;
+}
+
 h1.gamespage-title {
 	font-size: 180%;
 }
@@ -2073,14 +2264,7 @@ h4 {
 	height: 600px;
 }
 
-.circle {
-	width: 440px;
-	height: 440px;
-	border-radius: 220px;
-}
-
 .intro-game-button {
-	top: 400px;
 	font-size: 180%;
 	padding: 15px 0;
 }
@@ -2135,6 +2319,31 @@ h5 {
 }
 
 @media only screen and (max-width: 600px) {
+
+#water-drop-a {
+	top: -10%;
+	left: -5%;
+}
+
+#water-drop-b {
+	bottom: 10%;
+	right: -20%;
+}
+
+#water-drop-c {
+	bottom: -20%;
+	left: 12%;
+}
+
+#water-drop-d {
+	bottom: 2%;
+	left: -25%;
+}
+
+#water-drop-e {
+	top: 1%;
+	right: -5%;
+}
 
 h1 {
 	font-size: 180%;
@@ -2448,14 +2657,7 @@ h4 {
 	font-size: 105%;
 }
 
-.circle {
-	width: 380px;
-	height: 380px;
-	border-radius: 190px;
-}
-
 .intro-game-button {
-	top: 360px;
 	font-size: 130%;
 }
 
